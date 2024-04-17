@@ -1,0 +1,10 @@
+site_name: Felis Documentation
+theme: 
+  name: material
+  custom_dir: docs/overrides
+  logo: media/logo-ab.png
+  features:
+    - navigation.instant
+    - navigation.tabs
+extra_css:
+  - stylesheets/extra.css
