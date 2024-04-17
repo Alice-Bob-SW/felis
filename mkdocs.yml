@@ -1,0 +1,11 @@
+site_name: Felis Documentation
+site_url: "https://felis.alice-bob.com/docs"
+theme: 
+  name: material
+  custom_dir: docs/overrides
+  logo: media/logo-ab.png
+  features:
+    - navigation.instant
+    - navigation.tabs
+extra_css:
+  - stylesheets/extra.css
