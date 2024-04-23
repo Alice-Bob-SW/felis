@@ -27,5 +27,13 @@ nav:
     - About the Qiskit provider: about_api_providers/about_the_provider.md
     - Changelog: about_api_providers/changelog.md
   - Contact us: contact_us.md
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
 extra_css:
   - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+extra_javascript:
+  - javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
