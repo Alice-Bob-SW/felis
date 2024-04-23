@@ -7,5 +7,24 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+nav:
+  - Home: index.md
+  - Getting started:
+    - Install the Qiskit provider: getting_started/install_the_qiskit_provider.md
+    - A first example: getting_started/a_first_example.md
+    - "Working with cat qubits: similatiries & differences": getting_started/working_with_cat_qubits.md
+    - Hardware availability schedule: getting_started/hardware_availability_schedule.md
+  - Going further:
+    - Supported instructions: going_further/supported_instructions.md
+    - Backends: going_further/backends.md
+    - Sample notebook library: going_further/sample_notebooks.md
+    - About error models in emulators: going_further/about_error_models.md
+    - How to run multiple circuits remotely: going_further/run_multiple_circuits.md
+  - About the API & providers:
+    - The API: about_api_providers/the_api.md
+    - The local Qiskit provider: about_api_providers/the_local_provider.md
+    - About the Qiskit provider: about_api_providers/about_the_provider.md
+    - Changelog: about_api_providers/changelog.md
+  - Contact us: contact_us.md
 extra_css:
   - stylesheets/extra.css
