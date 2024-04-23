@@ -4,6 +4,7 @@ theme:
   name: material
   custom_dir: docs/overrides
   logo: media/logo-ab.png
+  favicon: media/favicon.ico
   features:
     - navigation.instant
     - navigation.tabs
