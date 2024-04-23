@@ -1,4 +1,7 @@
 name: Deploy
+env:
+  SOURCE_BRANCH: main
+  PAGES_BRANCH: gh-pages
 on:
   push:
     branches:
@@ -25,4 +28,27 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material 
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs build
+      # Release the site to the gh-pages branch in a subdir "docs"
+      # so that our site can be hosted at felis.alice-bob.com/docs
+      - run: ghp-import site --force -p -x docs
+
+      - name: Switch to $PAGES_BRANCH branch
+        run: git checkout $PAGES_BRANCH
+
+      - name: Copy CNAME & index.html from $SOURCE_BRANCH branch
+        run: git checkout $SOURCE_BRANCH CNAME index.html
+
+      - name: Add files to commit
+        run: git add CNAME index.html
+
+      - name: Commit CNAME & index.html
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git commit -m "Add CNAME & index.html"
+
+      - name: Push changes
+        run: git push origin $PAGES_BRANCH
+
+
