@@ -15,7 +15,7 @@ For real chips working in logical mode, give us a little more time 🙂
 
 
 
-Supported instructions may depend on the backend you use. Read [Supported instructions](supported_instructions.md) for more details.
+Supported instructions may depend on the backend you use. Read [Supported instructions](../reference/supported_instructions.md) for more details.
 
 ## Listing all available backends
 
@@ -89,7 +89,7 @@ backend = local.get_backend('EMU:6Q:PHYSICAL_CATS')
 
 This backend reproduces the behavior of a chip featuring 6 cat qubits, with a circular neighbor connectivity (each qubit has two neighbors).
 
-It only supports bias-preserving gates (see [Supported instructions](supported_instructions.md)).
+It only supports bias-preserving gates (see [Supported instructions](../reference/supported_instructions.md)).
 
 It can be used to implement the smallest error correction code.
 
@@ -108,7 +108,7 @@ backend = local.get_backend('EMU:40Q:PHYSICAL_CATS')
 
 This backend reproduces the behavior of a chip featuring 40 cat qubits connected in a grid pattern.
 
-It only supports bias-preserving gates (see [Supported instructions](supported_instructions.md)).
+It only supports bias-preserving gates (see [Supported instructions](../reference/supported_instructions.md)).
 
 It can be used to implement a long error correction code, or logical operations between several logical qubits using a shorter code.
 
@@ -136,7 +136,7 @@ In this backend, information is physically stored in 13 "data" cat qubits (carry
 
 Physical qubits are abstracted here - errors are emulated using an analytical formula rather than by emulating the individual behavior of each physical qubit.
 
-Logical error rates are between $10^{-3}$ and $10^{-4}$, but they can be made better (or worse) by tuning the `average_nb_photons`, `kappa_1`, `kappa_2`, and `distance` parameters - see [Chip settings](supported_instructions.md) for more details.
+Logical error rates are between $10^{-3}$ and $10^{-4}$, but they can be made better (or worse) by tuning the `average_nb_photons`, `kappa_1`, `kappa_2`, and `distance` parameters - see [Chip settings](../reference/supported_instructions.md) for more details.
 
 You get all-to-all connectivity and a universal gate set.
 

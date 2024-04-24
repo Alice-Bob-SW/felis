@@ -50,11 +50,11 @@ Here’s a recap of the tunable settings on currently available backends:
 
 | Model | average_nb_photons | kappa_1 | kappa_2 | distance | Availability |
 | --- | --- | --- | --- | --- | --- |
-| [EMU:1Q:LESCANNE_2020](backends.md/#lescanne-2020) | ✅ | ❌ | ❌ | ❌ | Remote & Local |
-| [EMU:6Q:PHYSICAL_CATS](backends.md/#6-physical-cats) | ✅ | ✅ | ✅ | ❌ | Remote & Local |
-| [EMU:40Q:PHYSICAL_CATS](backends.md/#40-physical-cats) | ✅ | ✅ | ✅ | ❌ | Remote & Local |
-| [EMU:15Q:LOGICAL_EARLY](backends.md/#15-logical-qubits) | ✅ | ✅ | ✅ | ✅ | Remote & Local |
-| [EMU:40Q:LOGICAL_TARGET](backends.md/#40-logical-qubits) | ✅ | ✅ | ✅ | ✅ | Remote & Local |
+| [EMU:1Q:LESCANNE_2020](../backends/backends_list/lescanne_2020.md) | ✅ | ❌ | ❌ | ❌ | Remote & Local |
+| [EMU:6Q:PHYSICAL_CATS](../backends/backends_list/6_physical_cats.md) | ✅ | ✅ | ✅ | ❌ | Remote & Local |
+| [EMU:40Q:PHYSICAL_CATS](../backends/backends_list/40_physical_cats.md) | ✅ | ✅ | ✅ | ❌ | Remote & Local |
+| [EMU:15Q:LOGICAL_EARLY](../backends/backends_list/logical_early.md) | ✅ | ✅ | ✅ | ✅ | Remote & Local |
+| [EMU:40Q:LOGICAL_TARGET](../backends/backends_list/logical_target.md) | ✅ | ✅ | ✅ | ✅ | Remote & Local |
 
 Some explanations:
 
