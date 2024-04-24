@@ -33,4 +33,4 @@ print(execute(circ, backend, shots=100000).result().get_counts())
 # {'01': 557, '11': 49422, '10': 596, '00': 49425}
 ```
 
-As can be seen in the example above, the main difference with the remote provider `AliceBobRemoteProvider` is that the settings (like `average_nb_photons` or `kappa_2`) must be configured in `get_backend(...)` instead of `execute(...)`. Learn more in [Chip settings](../going_further/supported_instructions.md).
+As can be seen in the example above, the main difference with the remote provider `AliceBobRemoteProvider` is that the settings (like `average_nb_photons` or `kappa_2`) must be configured in `get_backend(...)` instead of `execute(...)`. Learn more in [Chip settings](../reference/supported_instructions.md).

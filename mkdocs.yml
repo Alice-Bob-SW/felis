@@ -12,21 +12,39 @@ nav:
   - Home: index.md
   - Getting started:
     - Install the Qiskit provider: getting_started/install_the_qiskit_provider.md
-    - A first example: getting_started/a_first_example.md
-    - "Working with cat qubits: similatiries & differences": getting_started/working_with_cat_qubits.md
-    - Hardware availability schedule: getting_started/hardware_availability_schedule.md
-  - Going further:
-    - Supported instructions: going_further/supported_instructions.md
-    - Backends: going_further/backends.md
-    - Sample notebook library: going_further/sample_notebooks.md
-    - About error models in emulators: going_further/about_error_models.md
-    - How to run multiple circuits remotely: going_further/run_multiple_circuits.md
-  - About the API & providers:
-    - The API: about_api_providers/the_api.md
-    - The local Qiskit provider: about_api_providers/the_local_provider.md
-    - About the Qiskit provider: about_api_providers/about_the_provider.md
-    - Changelog: about_api_providers/changelog.md
+    - An example with physical qubits: getting_started/physical_example.md
+    - An example with logical qubits: getting_started/logical_example.md
+    - "Working with cat qubits: similarities & differences": getting_started/working_with_cat_qubits.md
+    - Sample notebook library: getting_started/sample_notebooks.md
+
+  - Felis Cloud: 
+    - Connect to Felis Cloud: felis_cloud/connect_to_felis_cloud.md
+    - Hardware availability schedule: felis_cloud/hardware_availability_schedule.md
+    - How to run multiple circuits remotely: felis_cloud/run_multiple_circuits.md
+
+  - Backends:
+    - About backends: backends/about_backends.md
+    - Logical and physical backends: backends/logical_physical.md
+    - Set backends parameters: backends/set_parameters.md
+    - List of available backends:
+      - "QPU:1Q:BOSON_4A": backends/backends_list/boson_4a.md
+      - "EMU:1Q:LESCANNE_2020": backends/backends_list/lescanne_2020.md
+      - "EMU:6Q:PHYSICAL_CATS": backends/backends_list/6_physical_cats.md
+      - "EMU:40Q:PHYSICAL_CATS": backends/backends_list/40_physical_cats.md
+      - "EMU:15Q:LOGICAL_EARLY": backends/backends_list/logical_early.md
+      - "EMU:40Q:LOGICAL_TARGET": backends/backends_list/logical_target.md
+
+  - Reference:
+    - Supported instructions: reference/supported_instructions.md
+    - Useful scientific papers: reference/papers.md
+    - Error models in emulators: reference/error_models.md
+    - Boson 4 chips: reference/boson_4_chips.md
+    - The Felis API: reference/the_api.md
+    - Felis changelog: reference/changelog.md
+    - About the Qiskit provider: reference/about_the_provider.md
+
   - Contact us: contact_us.md
+
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
