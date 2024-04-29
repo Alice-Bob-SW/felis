@@ -15,9 +15,11 @@ nav:
     - An example with physical qubits: getting_started/physical_example.md
     - An example with logical qubits: getting_started/logical_example.md
     - "Working with cat qubits: similarities & differences": getting_started/working_with_cat_qubits.md
+    - Why work with cat qubits?: getting_started/why_cat_qubits.md
     - Sample notebook library: getting_started/sample_notebooks.md
 
   - Felis Cloud: 
+    - About Felis Cloud: felis_cloud/about_felis_cloud.md
     - Connect to Felis Cloud: felis_cloud/connect_to_felis_cloud.md
     - Hardware availability schedule: felis_cloud/hardware_availability_schedule.md
     - How to run multiple circuits remotely: felis_cloud/run_multiple_circuits.md

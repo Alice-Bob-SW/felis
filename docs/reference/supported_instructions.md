@@ -1,12 +1,55 @@
 # Supported instructions
 
-## Supported Qiskit instructions
+## Supported gates
 
-The `EMU:20Q:PERFECT_QUBITS` and `EMU:7Q:TRANSMONS` backends, as well as the logical backends `EMU:15Q:LOGICAL_EARLY` and `EMU:40Q:LOGICAL_TARGET`, support a universal set of gates, so they should run any gate listed in [https://qiskit.org/documentation/tutorials/circuits/3_summary_of_quantum_operations.html](https://qiskit.org/documentation/tutorials/circuits/3_summary_of_quantum_operations.html).
+**Logical backends** (`EMU:15Q:LOGICAL_EARLY` and `EMU:40Q:LOGICAL_TARGET`) support a universal set of gates, so they should run any gate listed in [https://qiskit.org/documentation/tutorials/circuits/3_summary_of_quantum_operations.html](https://qiskit.org/documentation/tutorials/circuits/3_summary_of_quantum_operations.html).
 
-The backends with physical cat qubits (both emulators and QPUs) support a limited set of gates, [as detailed below](#state-preparations).
+**Physical backends** support a limited set of gates among the following:
 
-### Chip settings
+- `delay(duration, qarg=qubit_index, unit='ns')`
+    - This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.Delay)
+    - It attempts to preserve the state of qubit `qubit_index` during the specified `duration` and `unit`
+    - Minimum value: 1 ns
+- `initialize(value, qubit_index)`
+    - This is a custom Felis gate
+    - It initializes qubit `qubit_index` to one of four supported `value`:   `'0'`, `'1'`, `'+'`, `'-'`
+- `z(qubit_index)`
+    - This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.ZGate)
+    - It performs a phase-flip (transforming $\ket{+}$ into $\ket{-}$ and the reverse) on qubit `qubit_index`
+- `x(qubit_index)`
+    - This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.XGate)
+    - It performs a bit-flip (transforming $\ket{0}$ into $\ket{1}$ and the reverse) on qubit `qubit_index`
+- `rz(angle, qubit_index)`
+	- This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.RZGate)
+	- It performs a rotation of angle `angle` around the Z axis on qubit `qubit_index`
+- `cx(qubit_index_1, qubit_index_2)`
+	- This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.CXGate)
+	- It performs a controlled X gate (also called "CNOT") between qubits `qubit_index_1` and `qubit_index_2`
+	- It is only available on backends featuring at least 2 qubits
+- `measure(qubit_index, clbit_index)`
+    - This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.Measure)
+    - It performs a Z measurement on qubit `qubit_index` and stores the result in the classical bit `clbit_index`
+- `measure_x(qubit_index, clbit_index)`
+    - This is a custom Felis gate
+    - It performs an X measurement on qubit `qubit_index` and stores the result in the classical bit `clbit_index`
+    - The native Qiskit equivalent would be `H` + `measure`, but `H` is not supported by physical backends.
+
+Note that these operations are all bias-preserving (i.e. they do not convert a phase-flip error into a bit-flip error).
+
+Any instruction other than those listed above is not supported by physical backends.
+
+To know which gate is supported by which backend, check your backend's page in the [Backends section](../backends/about_backends.md)
+
+Gates must be added to a Qiskit `QuantumCircuit`. For example:
+
+```python
+from qiskit import QuantumCircuit
+
+circ = QuantumCircuit(1,1)
+circ.x(0)
+```
+
+## Backend parameters
 
 Depending on the backend, some settings of the chip can be configured.
 
@@ -62,39 +105,6 @@ Some explanations:
 - `kappa_1` and `kappa_2` are the one-photon loss rate and the two-photon loss rate respectively. The loss of single photons is detrimental because it causes phase-flips, while the exchange of pairs of photons is used to stabilize the qubit. As a consequence, `kappa_1 / kappa_2` is a good proxy for the quality of the physical chip: the smaller this number (say $10^{-5}$) the fewer bit-flips and phase-flips.
 - `distance` is the distance of the error correction code, i.e. the number of physical qubits used to create a logical qubits. Phase-flips are exponentially removed as the distance of the code is increased, but bit-flips increase linearly. This parameter is only available for logical backends.
 
-### State preparations
-
-```python
-c = QuantumCircuit(1, 1)
-
-# P0 (here on qubit #0)
-c.initialize('0', 0)
-
-# P1 (here on qubit #0)
-c.initialize('1', 0)
-
-# P+ (here on qubit #0)
-c.initialize('+', 0)
-
-# P- (here on qubit #0)
-c.initialize('-', 0)
-```
-
-- Preparing |0>, |1>, |+> and |-> are native operations
-- Due to the restricted gate set, preparing states other than these four might not work
-
-### Measurements
-
-```python
-c = QuantumCircuit(1, 1)
-
-# Mz (here on qubit #0, result stored in classical bit #0)
-c.measure(0, 0)
-
-# Mx (here on qubit #0, result stored in classical bit #0)
-c.measure_x(0, 0)
-```
-
 Note that measure_x is not a standard Qiskit operation - it only exists in this provider:
 
 - It is a native physical operation on a cat qubit
@@ -114,7 +124,7 @@ c.x(0)
 c.z(0)
 
 # Rz (here with angle pi/4 on qubit #0)
-c.rz(np.pi / 4.0, 0)
+
 
 # CNOT (here on qubits #0 and #1 - requires a backend with 2 qubits or more)
 c.cx(0, 1)
@@ -122,10 +132,6 @@ c.cx(0, 1)
 # Delay (here delays the whole circuit by 1µs)
 c.delay(1, unit='us')
 ```
-
-Note that these operations are all bias-preserving (i.e. they do not convert a phase-flip error into a bit-flip error).
-
-Any instruction other than those listed above is not supported by physical backends.
 
 
 ⚠️ In `EMU:1Q:LESCANNE_2020` and future real hardware (at least at the beginning), the X gate is implemented virtually, by transpiling the circuit and post-processing the results.
