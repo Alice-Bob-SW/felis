@@ -1,8 +1,10 @@
-# Running Qiskit programs: a first example
+# An example with physical qubits
 
-Here’s a very simple Qiskit program which lets you witness the biased noise of our cat qubits.
+When you use a physical backend, qubit and gates feature the noise characteristics of physical cat qubits. In other words, each qubit of a physical backend corresponds to one qubit on a chip (real or emulated).
 
-- ☝ If you’re not familiar with Qiskit, here’s a [short introduction](https://qiskit.org/documentation/intro_tutorial1.html).
+Cat qubits feature a strongly biased noise: their bit-flip lifetime can be very long (up to hundreds of seconds), but their phase-flip lifetime is relatively short (a few microseconds).
+
+This property greatly reduces the number of qubits required to implement quantum error correction
 
 - If you’re not familiar with cat qubits, you may want to read [Working with cat qubits: similarities & differences](working_with_cat_qubits.md) first.
 
