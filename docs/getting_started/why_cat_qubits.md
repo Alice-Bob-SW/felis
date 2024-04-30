@@ -12,6 +12,6 @@ This in turn enables much simpler error correction schemes: because there’s vi
 
 Several physical qubits running a repetition code can then become a “logical qubit”, featuring a much lower error rate than any of the physical qubits it is made of.
 
-Using cat qubits, we estimate we can build a fault-tolerant quantum computer [requiring 60 fewer qubits](https://arxiv.org/abs/2302.06639) than if we were using transmons.
+Using cat qubits, we estimate we can build a fault-tolerant quantum computer requiring [60 times fewer](https://arxiv.org/abs/2302.06639) or even [200 times fewer](https://arxiv.org/abs/2401.09541) qubits than if we were using transmons.
 
 To learn more about the physics of cat qubits, you can read our seminal paper at [https://www.nature.com/articles/s41567-020-0824-x](https://www.nature.com/articles/s41567-020-0824-x) or [https://arxiv.org/abs/1907.11729](https://arxiv.org/abs/1907.11729).

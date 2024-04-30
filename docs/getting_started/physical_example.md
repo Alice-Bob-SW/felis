@@ -4,11 +4,11 @@ When you use a physical backend, qubit and gates feature the noise characteristi
 
 Cat qubits feature a strongly biased noise: their bit-flip lifetime can be very long (up to hundreds of seconds), but their phase-flip lifetime is relatively short (a few microseconds).
 
-This property greatly reduces the number of qubits required to implement quantum error correction
+This property greatly reduces the number of qubits required to implement quantum error correction, up to 200 times as shown in [this article](https://arxiv.org/abs/2401.09541).
 
-- If you’re not familiar with cat qubits, you may want to read [Working with cat qubits: similarities & differences](working_with_cat_qubits.md) first.
+💡 **Note:** If you’re not familiar with cat qubits, you may want to read [Working with cat qubits: similarities & differences](working_with_cat_qubits.md) first.
 
-You may paste the following code in a Python script or a Jupyter notebook.
+Here's an example using a physical backend, showing how cat qubits feature a biased noise.
 
 First, we set up the provider and import dependencies:
 

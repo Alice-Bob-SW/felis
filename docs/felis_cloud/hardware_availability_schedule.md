@@ -1,15 +1,17 @@
 # Hardware availability schedule
 
+## General rules
+
 All emulators in the remote provider are expected to be available 24/7.
 
-Real chips, when they first launch, will only be available during predetermined time slots.
+[`QPU:1Q:BOSON_4A`](../backends/backends_list/boson_4a.md) is available from **Monday to Friday** from **10am to 5pm**, Paris time, except on French bank holidays and any date listed below.
 
-Likely several hours a day, several days a week, but probably not at night (Paris time) or during weekends.
+Live status for backends is available at [https://api.alice-bob.com/console/status](https://api.alice-bob.com/console/status)
 
-This will let us monitor how the chips behave and react in real time to any issues that might arise.
+## Next planned unavailability dates
 
-If things go smoothly, our goal is to move towards 24/7 availability as soon as possible.
+- May 8th (French bank holiday)
+- May 9th (French bank holiday)
+- May 20th (French bank holiday)
 
-We expect there will always be scheduled down times for maintenance though, but we will work to keep them as short as possible.
-
-We will update this page with a more detailed schedule when the first chip launches.
+💡 **Note:** We are still in the early stages of operating our chips on the cloud, meaning they are only publicly available during our working hours. If you would like to run experiments outside of this schedule, we are happy to explore custom solutions, please [contact us](../contact_us.md).

@@ -22,7 +22,7 @@ If this is the case, here is a pragmatic summary of what to expect with Felis.
         - May be used to run quantum algorithms and study the impact of noise on the quality of their results; they feature a universal set of gates and all-to-all connectivity
         - Abstract away error correction, but let you tune its effect by using the `distance` parameter 
     - Learn more about logical and physical backends [here](../backends/logical_physical.md)
-- In both modes:
+- With both types:
     - The bit-flip/phase-flip ratio can be tuned by adjusting `average_nb_photons`
     - Additional native operations are available (prepare $\ket{+}$ or $\ket{-}$, measurement along the X axis); learn about them [here](../reference/supported_instructions.md)
     - Emulator backends which are not digital twins let you tune `kappa_1` and `kappa_2` parameters, representing the quality of the cat qubit (a good cat qubit has a low `kappa_1` and a high `kappa_2`)

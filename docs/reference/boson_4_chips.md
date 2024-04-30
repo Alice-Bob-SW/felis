@@ -1,6 +1,8 @@
-# The Boson 4 design
+# Boson 4 chips
 
-Boson 4 is part of the “Boson” series of chip designs, meant to demonstrate promising ways of implementing cat qubits.
+## The Boson 4 design
+
+Boson 4 is part of the “Boson” series of chip designs, meant to demonstrate promising ways of implementing [cat qubits](../getting_started/why_cat_qubits.md).
 
 ![A Boson 4 chip](../media/backends/boson4.png)
 
@@ -18,46 +20,57 @@ A Boson 4 chip features two independent cat qubits, which are not coupled with o
 
 We are currently working on a paper giving a more detailed description of the Boson 4 design.
 
-# Main performance figures
+## Available Boson 4 backends
 
-## Lifetime
+You may run circuits on a Boson 4 chip using the [`QPU:1Q:BOSON_4A`](../backends/backends_list/boson_4a.md) backend ([Felis Cloud](../felis_cloud/about_felis_cloud.md) subscription required).
 
-These figures were measured and can be reproduced using **this notebook (link to add)**.
+## Main performance figures
 
-|  | nbar = 4 | nbar = 16 |
+The figures below can all be reproduced using **this notebook (link to add)**
+
+### Lifetime
+
+These figures represent the chip's bit-flip and phase-flip lifetime.
+
+When preparing the $\ket{0}$ state, the probability of a Z measurement yielding 0 after a delay of duration $t$ decays as $\exp(-t/T_{bf})$, where $T_{bf}$ is the bit-flip lifetime.
+
+When preparing the $\ket{+}$ state, the probability of an X measurement yielding + after a delay of duration $t$ decays as $\exp(-t/T_{pf})$, where $T_{pf}$ is the phase-flip lifetime.
+
+💡 **Note:** if you're used to working with transmons, you know that state decay only happens if you start from the $\ket{1}$ state. With cat qubits, the $\ket{0}$ and $\ket{1}$ states are virtually interchangeable. Experimental differences might remain, but they're mostly due to sampling noise and calibration inaccuracies.
+
+|  | average_nb_photons = 4 | average_nb_photons = 16 |
 | --- | --- | --- |
 | Bit-flip | 1 ms | > 100 seconds |
 | Phase-flip | 2 µs | 0.5 µs |
 
-💡 **Note:** Measuring lifetimes over 100 seconds is challenging using repeated measurements and a chip shared between users. Doing 1000 shots of a 100-second experiment takes almost 28 hours.
+💡 **Note:** Measuring lifetimes over 100 seconds is challenging using repeated measurements and a chip shared between users:
 
-We are working on adding the “real-time trajectories” protocol described in [https://arxiv.org/pdf/2307.06617.pdf](https://arxiv.org/pdf/2307.06617.pdf), which enables shorter measurements.
+- Doing 1000 shots of a 100-second experiment takes almost 28 hours
+- Doing shorter experiments yields too few errors; this requires using more shots and does not make experiments significantly shorter
 
-## SPAM errors
+We are working on adding the “real-time trajectories” protocol described in [this paper](https://arxiv.org/pdf/2307.06617.pdf), which enables shorter measurements.
 
-These figures were measured and can be reproduced using **this notebook (link to add)**.
+### SPAM errors
 
-They represent sequence error (# shots giving the expected result / # of shots).
+These figures represent sequence error (# shots giving the expected result / # of shots).
 
-| Sequence | Measured error at nbar = 4 | Measured error at nbar = 16 |
+| Sequence | average_nb_photons | average_nb_photons |
 | --- | --- | --- |
 | P0 - Mz | 2 % | < 0.001 % |
 | P+ - Mx | 38 % | 47 % |
 
 💡 **Note:** As you notice, while this chip's bit-flip performance is stellar, the phase-flip performance is still somewhat underwhelming. Cat qubit architectures are less demanding regarding qubit quality (a repetition code has a higher threshold than a surface code), but phase-flip performance still needs to improve by 1 to 2 orders of magnitude for error correction to work reliably. We are focused on improving this, with several promising solutions being tested in our lab. Stay tuned!
 
-## Z gate performance
+### Z gate performance
 
-These figures were measured and can be reproduced using this notebook **(link to add)**.
+These figures represent the probability of getting a bit-flip or phase-flip during a Z-gate.
 
-They represent the probability of getting a bit-flip or phase-flip during a Z-gate
-
-|  | nbar = 4 | nbar = 16 |
+|  | average_nb_photons = 4 | average_nb_photons = 16 |
 | --- | --- | --- |
 | Bit-flip | 0.15 % | < 0.001 % |
 | Phase-flip | 20 % | 40 % |
 
-## Chip parameters
+### Chip parameters
 
 These parameters were measured in Alice & Bob’s lab and cannot be reproduced using Felis.
 
@@ -75,7 +88,7 @@ These parameters were measured in Alice & Bob’s lab and cannot be reproduced u
 | n_th | 2 |  |
 | n_th_buffer | not measured | we don't know how to measure it at the moment (03/24) |
 
-# Gate implementation details
+## Gate implementation details
 
 To be retrieved from the datasheet when it is validated
 

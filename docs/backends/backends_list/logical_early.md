@@ -2,7 +2,6 @@
 
 ```python
 backend = local.get_backend('EMU:15Q:LOGICAL_EARLY')
-# This backend is not available in Alice & Bob Felis cloud service.
 ```
 
 This backend reproduces what might be the behavior of one of the first useful logical chips, featuring 15 logical qubits with conservative hypotheses on qubit quality.

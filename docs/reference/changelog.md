@@ -1,4 +1,9 @@
 # Changelog
+
+## Version 0.6.0
+
+- Improved feedback while running circuits using the remote provider
+
 ## Version 0.5.4
 
 - Add support for the TDG gate for the logical backends of the remote provider (the TDG gate was already supported on the local provider)
