@@ -5,7 +5,7 @@
 
 It is the first chip using a [Boson 4 design](../../reference/boson_4_chips.md) ever released by Alice & Bob.
 
-Boson 4 chips feature two independant cat qubits of identical design, one of which is exposed through this backend.
+Boson 4 chips feature two independant [cat qubits](../../getting_started/why_cat_qubits.md) of identical design, one of which is exposed through this backend.
 
 `QPU:1Q:BOSON_4A` is only available through the remote provider, with a Felis Cloud subscription.
 
@@ -33,6 +33,10 @@ Read more about supported gates [here](../../reference/supported_instructions.md
 # Supported providers
 - ❌ ~~`AliceBobLocalProvider`~~
 - ✅ `AliceBobRemoteProvider`
+
+# Connectivity
+
+N/A - This backend features a single qubit.
 
 # Expected performance
 See [Boson 4 chips](../../reference/boson_4_chips.md)
