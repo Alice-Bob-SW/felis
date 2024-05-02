@@ -54,7 +54,7 @@ We are working on adding the “real-time trajectories” protocol described in 
 
 These figures represent sequence error (# shots giving the expected result / # of shots).
 
-| Sequence | average_nb_photons | average_nb_photons |
+| Sequence | average_nb_photons = 4 | average_nb_photons = 16 |
 | --- | --- | --- |
 | P0 - Mz | 2 % | < 0.001 % |
 | P+ - Mx | 38 % | 47 % |
