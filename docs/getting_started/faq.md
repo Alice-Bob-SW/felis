@@ -27,6 +27,25 @@ But on a physical backend, even without a Hadamard gate, you may:
 - Initialize a qubit in the $\ket{+}$ state using `initalize('+', qubit_index)`
 - Perform a X measurement using `measure_x(qubit_index, clbit_index)`
 
+## Boson 4's phase-flip performance is disappointing. Is there any chance it will improve?
+
+There are two things to consider here:
+
+- X readout fidelity
+- Phase-flip lifetime
+
+The most visible issue is the X readout fidelity, which can be witnessed when measuring SPAM fidelity with a "Prepare $\ket{+}$ - Measure $X$" sequence. Our transmon-free X readout technique was introduced in [our recent Nature paper](https://arxiv.org/abs/2307.06617), as a first of its kind. It enabled us to reach very long bit-flip lifetimes, but it still lacks optimization. We must however optimize it so it can be used in a phase-flip QEC scheme. This is why:
+
+- We are currently developing new transmon-free readout techniques that will enable us to reach below threshold operation.
+- We may open pulse-level access to a Boson 4 chip to accelerate the discovery of new techniques. [Let us know](../contact_us.md) if you are interested in a collaboration.
+
+Concerning the phase-flip lifetime:
+
+- We are currently working on our nanofabrication to increase the resonators T1s.
+- We are also implementing stronger stabilization techniques that will make our qubit gates faster and hence less error prone.
+
+All of this is work in progress and we are looking forward to sharing our progress by making new chips available on Felis Cloud.
+
 ## When will a multi-qubit chip be available in Felis Cloud?
 
 Probably not before 2025. But we are already working on it and will keep you updated.
