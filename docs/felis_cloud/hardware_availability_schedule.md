@@ -4,7 +4,7 @@
 
 All emulators in the remote provider are expected to be available 24/7.
 
-[`QPU:1Q:BOSON_4A`](../backends/backends_list/boson_4a.md) is available from **Monday to Friday** from **10am to 5pm**, Paris time, except on the dates listed below.
+[`QPU:1Q:BOSON_4A`](../backends/backends_list/boson_4a.md) is available from **Monday to Friday** from **10am to 5pm, Paris time**, except on the dates listed below.
 
 Live status for backends is available at [https://api.alice-bob.com/console/status](https://api.alice-bob.com/console/status)
 

@@ -2,8 +2,8 @@
 
 Need help? Have feedback?
 
-- Join [The Cat Tree](https://join.slack.com/t/the-cat-tree/shared_invite/zt-2cg0a3rno-PP~AaUztS3dtiRyzsawlnQ), our Slack community
-- Contact Laurent Prost at firstname.surname@alice-bob.com
+- In most cases, you'll get the best support on [The Cat Tree](https://join.slack.com/t/the-cat-tree/shared_invite/zt-2cg0a3rno-PP~AaUztS3dtiRyzsawlnQ), our Slack community
+- For issues requiring more confidentiality, please use https://alice-bob.com/cloud-contact
 
 We’ll be happy to know what you think, and we also take positive feedback! 🙂
 
