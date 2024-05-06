@@ -39,7 +39,7 @@ When preparing the $\ket{+}$ state, the probability of an X measurement yielding
 |  | average_nb_photons = 4 | average_nb_photons = 16 |
 | --- | --- | --- |
 | Bit-flip | 1 ms | > 100 seconds |
-| Phase-flip | 2 µs | 0.5 µs |
+| Phase-flip | 1 µs | 0.5 µs |
 
 💡 **Note:** Measuring lifetimes over 100 seconds is challenging using repeated measurements and a chip shared between users:
 
@@ -57,7 +57,7 @@ These figures represent sequence error (# shots giving the expected result / # o
 | Sequence | average_nb_photons = 4 | average_nb_photons = 16 |
 | --- | --- | --- |
 | P0 - Mz | 2 % | < 0.001 % |
-| P+ - Mx | 38 % | 47 % |
+| P+ - Mx | 41 % | 47 % |
 
 💡 **Note:** As you notice, while this chip's bit-flip performance is stellar, the phase-flip performance is still somewhat underwhelming.
 
@@ -80,19 +80,19 @@ These figures represent the probability of getting a bit-flip or phase-flip duri
 
 These parameters were measured in Alice & Bob’s lab and cannot be reproduced using Felis.
 
-| Metric | Measured value | Comments |
-| --- | --- | --- |
-| f_a | 1.079 GHz |  |
-| f_b | 7.898 GHz |  |
-| κ_1/2π | 2.26 kHz | Bare kappa_1 measured |
-| κ_1_eff/2π | not measured | Effective kappa_1 (under pump) |
-| κ_b/2π | 22 MHz |  |
-| κ_2/2π | 250 kHz |  |
-| g_2/2π | 1.2 MHz | quote here phi_pump simulated |
-| K/2π | -12 kHz |  |
-| κ_φ/2π | ... kHz | the measurement is broken at the moment (04/24). Could be replaced with T2R and T1 (wip) |
-| n_th | 2 |  |
-| n_th_buffer | not measured | we don't know how to measure it at the moment (03/24) |
+| Metric | Measured value |
+| --- | --- |
+| f_a | 1.079 GHz |
+| f_b | 7.898 GHz |
+| κ_1/2π | 2.26 kHz |
+| κ_1_eff/2π | 22.7 kHz |
+| κ_b/2π | 22 MHz |
+| κ_2/2π | 250 kHz |
+| g_2/2π | 1.2 MHz |
+| K/2π | -12 kHz |
+| κ_φ/2π | ... kHz |
+| n_th | 2 |
+| n_th_buffer | not measured |
 
 ## Gate implementation details
 
