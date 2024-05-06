@@ -1,7 +1,9 @@
-# Examples of emulation with Alice & Bob's Qiskit provider
+# Sample notebooks for Felis and Felis Cloud
 
-This repository contains examples of local emulations of various types of
-quantum processor architectures, using [Alice & Bob's Qiskit provider](https://github.com/Alice-Bob-SW/qiskit-alice-bob-provider).
+This repository contains sample notebooks to help you experiment with cat qubits
+It uses [Felis, Alice & Bob's Qiskit provider](https://github.com/Alice-Bob-SW/qiskit-alice-bob-provider)
+and may require a [Felis Cloud](https://felis.alice-bob.com/docs/felis_cloud/about_felis_cloud/) subscription
+to run circuits on a real quantum hardware.
 
 To install dependencies and run:
 ```
@@ -18,16 +20,3 @@ python -m venv venv
 pip install -r requirements.txt
 python -m jupyter notebook
 ```
-
-
-## Running emulator example notebooks on qBraid
-
-[<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com?gitHubUrl=https://github.com/Alice-Bob-SW/emulation-examples.git)
-
-1. To launch the example notebooks on qBraid, click the Launch on qBraid button. It will take you to your qBraid Lab with the repository cloned.
-2. From the FILES tab in the left sidebar, double-click on the `emulation-examples` directory, if you are not there already.
-3. Open a notebook using the Filebroswer extension on the left panel.
-4. Use the `alice & bob` environment which has the correct python packages to run the notebook.
-5. You are now ready to run the example notebooks without tedious pip installs!
-
-For other questions or additional help using qBraid, see [Lab Docs](docs.qbraid.com).
