@@ -1,7 +1,9 @@
 # Felis, by Alice & Bob
 
 
-## Contributing
+## Documentation
+
+Located in the docs folder
 
 Install mkdocs:
 ```
@@ -16,3 +18,11 @@ mkdocs serve
 To publish the documentation, create a pull request.
 Once the PR is rebased, it will trigger the CI and publish
 the new version.
+
+## Sample notebooks
+
+Read samples/README.md
+
+## Qiskit provider
+
+Visit https://github.com/Alice-Bob-SW/qiskit-alice-bob-provider
