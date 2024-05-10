@@ -26,7 +26,7 @@ You may run circuits on a Boson 4 chip using the [`QPU:1Q:BOSON_4A`](../backends
 
 ## Main performance figures
 
-The figures below can all be reproduced using **this notebook (link to add)**
+The figures below can all be reproduced using [this notebook](https://github.com/Alice-Bob-SW/felis/blob/main/samples/1_hardware_experiments/2%20-%20Boson%204%20tutorial.ipynb)
 
 ### Lifetime
 
