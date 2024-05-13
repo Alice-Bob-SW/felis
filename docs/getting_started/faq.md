@@ -34,7 +34,7 @@ There are two things to consider here:
 - X readout fidelity
 - Phase-flip lifetime
 
-The most visible issue is the X readout fidelity, which can be witnessed when measuring SPAM fidelity with a "Prepare $\ket{+}$ - Measure $X$" sequence. Our transmon-free X readout technique was introduced in [our recent Nature paper](https://arxiv.org/abs/2307.06617), as a first of its kind. It enabled us to reach very long bit-flip lifetimes, but it still lacks optimization. We must however optimize it so it can be used in a phase-flip QEC scheme. This is why:
+The most visible issue is the X readout fidelity, which can be witnessed when measuring SPAM fidelity with a "Prepare $\ket{+}$ - Measure $X$" sequence. Our transmon-free X readout technique was introduced in [our recent Nature paper](https://www.nature.com/articles/s41586-024-07294-3) ([arXiv link](https://arxiv.org/abs/2307.06617)), as a first of its kind. It enabled us to reach very long bit-flip lifetimes, but it still lacks optimization. We must however optimize it so it can be used in a phase-flip QEC scheme. This is why:
 
 - We are currently developing new transmon-free readout techniques that will enable us to reach below threshold operation.
 - We may open pulse-level access to a Boson 4 chip to accelerate the discovery of new techniques. [Let us know](../contact_us.md) if you are interested in a collaboration.

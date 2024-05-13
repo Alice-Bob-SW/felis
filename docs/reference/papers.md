@@ -29,7 +29,8 @@ The chip in this paper is now called "Boson 2".
 
 The chip in this paper is now called "Boson 3".
 
-- arXiv: [https://arxiv.org/abs/2307.06617](https://arxiv.org/abs/2307.06617)
+- Nature: [https://www.nature.com/articles/s41586-024-07294-3](https://www.nature.com/articles/s41586-024-07294-3)
+- arXiv (in case you don't have a Nature subscription): [https://arxiv.org/abs/2307.06617](https://arxiv.org/abs/2307.06617)
 
 ## Autoparametric Resonance Extending the Bit-Flip Time of a Cat Qubit up to 0.3 s
 
