@@ -12,7 +12,7 @@ For example, you may:
 
 All these measurements can be made with different values of `average_nb_photons`, to verify that adding photons affects performance in the way predicted by theory (exponential improvement of bit-flip performance and linear decrease of phase-flip performance).
 
-See the following notebook for a few examples **(link to add)**
+See [the following notebook](https://github.com/Alice-Bob-SW/felis/blob/main/samples/1_hardware_experiments/2%20-%20Boson%204%20tutorial.ipynb) for a few examples
 
 ## Why do physical backends not support Hadamard gates?
 
