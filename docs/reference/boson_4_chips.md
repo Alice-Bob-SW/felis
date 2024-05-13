@@ -46,7 +46,7 @@ When preparing the $\ket{+}$ state, the probability of an X measurement yielding
 - Doing 1000 shots of a 100-second experiment takes almost 28 hours
 - Doing shorter experiments yields too few errors; this requires using more shots and does not make experiments significantly shorter
 
-We are working on adding the “real-time trajectories” protocol described in [this paper](https://arxiv.org/pdf/2307.06617.pdf), which enables shorter measurements.
+We are working on adding the “real-time trajectories” protocol described in [our latest Nature paper](https://www.nature.com/articles/s41586-024-07294-3) ([arXiv link](https://arxiv.org/pdf/2307.06617.pdf)), which enables shorter measurements.
 
 💡 **Note:** if you're used to working with transmons, you know that state decay only happens if you start from the $\ket{1}$ state. With cat qubits, the $\ket{0}$ and $\ket{1}$ states are virtually interchangeable. Experimental differences might remain, but they're mostly due to sampling noise and calibration inaccuracies.
 
@@ -147,7 +147,7 @@ The result of the displacement is a state $\left|\psi'\right\rangle \equiv D(\al
 *Pulse sequence for the MZ measurement gate*
 
 **Calibration:**
-In practice, we perform the complementary operation with the opposite displacement $D(-\alpha)$ to subtract eventual drifts in the measurement. Furthermore, since we are only concerned in the two pointer states $\left|0\right\rangle$ and $\left|1\right\rangle$, the distinction between the two can be enhanced using thresholding. Finally, the number of photons is measured through the ''longitudinal readout'' protocol (see [Réglade, Bocquet, ''et.al.'' '''Nature''' (2024)](https://arxiv.org/abs/2307.06617) for more details).
+In practice, we perform the complementary operation with the opposite displacement $D(-\alpha)$ to subtract eventual drifts in the measurement. Furthermore, since we are only concerned in the two pointer states $\left|0\right\rangle$ and $\left|1\right\rangle$, the distinction between the two can be enhanced using thresholding. Finally, the number of photons is measured through the ''longitudinal readout'' protocol (see [Réglade, Bocquet, ''et.al.'' '''Nature''' (2024)](https://www.nature.com/articles/s41586-024-07294-3) - or [arXiv](https://arxiv.org/abs/2307.06617) for more details).
 
 ### measure_x
 
