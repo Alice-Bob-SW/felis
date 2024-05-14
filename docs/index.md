@@ -18,4 +18,4 @@ With Felis, you can run quantum circuits:
 
 Get started now by [installing the Qiskit provider](getting_started/install_the_qiskit_provider.md).
 
-Any questions or feedback?  [Contact us](contact_us.md).
+Any questions or feedback? [Read our FAQ](reference/faq.md) or [contact us](contact_us.md).
