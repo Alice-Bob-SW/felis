@@ -17,7 +17,6 @@ nav:
     - "Working with cat qubits: similarities & differences": getting_started/working_with_cat_qubits.md
     - Why work with cat qubits?: getting_started/why_cat_qubits.md
     - Sample notebook library: getting_started/sample_notebooks.md
-    - Frequently asked questions: getting_started/faq.md
 
   - Felis Cloud: 
     - About Felis Cloud: felis_cloud/about_felis_cloud.md
@@ -38,6 +37,7 @@ nav:
       - "EMU:40Q:LOGICAL_TARGET": backends/backends_list/logical_target.md
 
   - Reference:
+    - Frequently asked questions: reference/faq.md
     - Supported instructions: reference/supported_instructions.md
     - Useful scientific papers: reference/papers.md
     - Error models in emulators: reference/error_models.md
