@@ -21,7 +21,7 @@ While the bit-flip lifetime of the chip in Raphaël Lescanne's seminal experimen
 
 The chip in this paper is now called "Boson 2".
 
-- arXiv: [https://arxiv.org/abs/2204.09128](https://arxiv.org/abs/2204.09128)
+- Physical Review X Quantum: [https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.4.020350](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.4.020350)
 
 ## Quantum control of a cat-qubit with bit-flip times exceeding ten seconds
 
@@ -34,7 +34,7 @@ The chip in this paper is now called "Boson 3".
 
 ## Autoparametric Resonance Extending the Bit-Flip Time of a Cat Qubit up to 0.3 s
 
-In parallel, we also explore better transmon-based designs, such as AutoCat which reached a 0.3 s bit-flip lifetime.
+In parallel, we also explore better transmon-based designs, such as AutoCat which reached a 0.3 s bit-flip lifetime and a better phase-flip performance (error rate as low as 3.5 % for the Z gate).
 
 - Physical Review X: [https://journals.aps.org/prx/abstract/10.1103/PhysRevX.14.021019](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.14.021019)
 
