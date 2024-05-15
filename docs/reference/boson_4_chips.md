@@ -48,7 +48,7 @@ When preparing the $\ket{+}$ state, the probability of the Pauli operator X yiel
 
 > We are working on adding the “real-time trajectories” protocol described in [our latest Nature paper](https://www.nature.com/articles/s41586-024-07294-3) ([arXiv link](https://arxiv.org/pdf/2307.06617.pdf)), which enables shorter measurements.
 
-> 💡 **Note:** if you're used to working with transmons, you know that state decay only happens if you start from the $\ket{1}$ state. With cat qubits, the $\ket{0}$ and $\ket{1}$ states are virtually interchangeable. Experimental differences might remain, but they're mostly due to sampling noise, calibration inaccuracies or [readout](#measure).
+> 💡 **Note:** if you're used to working with transmons, you know that state decay only happens if you start from the $\ket{1}$ state. With cat qubits, the $\ket{0}$ and $\ket{1}$ states are virtually interchangeable. Experimental differences might remain, but they're mostly due to sampling noise, calibration inaccuracies or [readout](#measure0).
 
 ### SPAM errors
 
@@ -59,7 +59,7 @@ These figures represent sequence error (# shots giving the wrong result / # of s
 | $P_0$ - $M_Z$ | $1.7\%$ | $7.6\times 10^{-6}$ |
 | $P_+$ - $M_X$ | $40 \%$ | $47 \%$ |
 
-> 💡 **Note:** If you run your own experiments, you will notice that $P_1$ - $M_Z$ does not give the same results as $P_0$ - $M_Z$. This is because while our [state preparation](#initialize0-or-1) is symmetrical, our [readout protocol](#measure) is not.
+> 💡 **Note:** If you run your own experiments, you will notice that $P_1$ - $M_Z$ does not give the same results as $P_0$ - $M_Z$. This is because while our [state preparation](#initialize0-or-1) is symmetrical, our [readout protocol](#measure0) is not.
 
 ### Z gate performance
 
