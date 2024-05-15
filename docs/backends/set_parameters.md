@@ -27,14 +27,14 @@ Depending on the backend, some settings affecting the backend's noise characteri
 
 - `kappa_1` is the one-photon loss rate, expressed in Hz.
 - Qubit quality decreases as `kappa_1` increases, since one-photon losses causes phase-flips.
-- [Boson 4 chips](../reference/boson_4_chips.md) feature `kappa_1 = 7_100`.
+- [Boson 4 chips](../reference/boson_4_chips.md) feature `kappa_1 = 3.14*19_900`.
 - This parameter is not available on a real chip and on digital twin emulators.
 
 #### $\kappa_2$
 
 - `kappa_2` is the two photon-loss rate, expressed in Hz.
 - Qubit quality increases as `kappa_2` increases, since the exchange of pairs of photons is used to stabilize the qubit.
-- [Boson 4 chips](../reference/boson_4_chips.md) feature `kappa_1 = 785_000`.
+- [Boson 4 chips](../reference/boson_4_chips.md) feature `kappa_2 = 3.14*250_000`.
 - This parameter is not available on a real chip and on digital twin emulators.
 
 #### $\kappa_1/\kappa_2$
@@ -44,7 +44,7 @@ Depending on the backend, some settings affecting the backend's noise characteri
 - Current Alice & Bob chips feature $\kappa_1/\kappa_2 < 10^{-2}$
 - Getting error correction to work reliably requires $\kappa_1/\kappa_2 < 10^{-3}$
 - Creating 100 logical qubits at a $10^{-8}$ error rate with 1500 qubits requires $\kappa_1/\kappa_2 < 10^{-4}$, as shown in [this article](https://arxiv.org/abs/2401.09541)
-- Running Shor's algorithm on a 2048-bit number requires $\kappa_1/$kappa_2 < 10^{-5}$, as shown in [this article](https://arxiv.org/abs/2302.06639)
+- Running Shor's algorithm on a 2048-bit number requires $\kappa_1/\kappa_2 < 10^{-5}$, as shown in [this article](https://arxiv.org/abs/2302.06639)
 
 ### Repetition code distance
 
