@@ -34,7 +34,7 @@ These figures represent the qubit's bit-flip and phase-flip lifetime.
 
 When preparing the $\ket{0}$ state, the probability of the Pauli operator Z yielding 0 after a delay of duration $t$ decays as $\exp(-t/T_{Z})$, where $T_{Z}$ is the bit-flip lifetime.
 
-When preparing the $\ket{+}$ state, the probability of the Pauli operator X yielding + after a delay of duration $t$ decays as $\exp(-t/T_{X})$, where $T_{X}$ is the phase-flip lifetime.
+When preparing the $\ket{+}$ state, the probability of the Pauli operator X yielding +1 after a delay of duration $t$ decays as $\exp(-t/T_{X})$, where $T_{X}$ is the phase-flip lifetime.
 
 |  | average_nb_photons = 4 | average_nb_photons = 11 |
 | --- | --- | --- |
@@ -78,7 +78,12 @@ These figures represent the probability of getting a bit-flip or phase-flip duri
 > - Better performance has already been achieved with different designs. For example, the [AutoCat design](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.14.021019) features a 3.5 % error rate for the Z gate.
 > - Cat qubit architectures are less demanding regarding qubit quality (a repetition code has a higher threshold than a surface code).
 
-> Overall, phase-flip performance still needs to improve by 1 to 2 orders of magnitude for error correction to work reliably. We are focused on improving this, with several promising solutions being tested in our lab. Stay tuned!
+> Overall, phase-flip performance still needs to improve by 1 to 2 orders of magnitude for error correction to work reliably. More precisely:
+
+> - According to [this paper](https://quantum-journal.org/papers/q-2023-12-06-1198/), the $\kappa_2/\kappa_{1_{eff}}$ ratio must be improved to a few hundreds to reach the repetition code's threshold.
+> - According to the figures in [the table below](#chip-parameters), Boson 4's ratio is 12.5.
+
+> We are focused on improving these figures, with several promising solutions being tested in our lab. Stay tuned!
 
 > Or, if you think this is an interesting research topic, don't hesitate to [drop us a line](../contact_us.md), we are happy to explore potential collaborations.
 
@@ -86,18 +91,20 @@ These figures represent the probability of getting a bit-flip or phase-flip duri
 
 These parameters were measured in Alice & Bob’s lab and cannot be reproduced using Felis.
 
-| Metric | Measured value |
-| --- | --- |
-| $f_a$ | 1.079 GHz |
-| $f_b$ | 7.898 GHz |
-| $\kappa_1/2\pi$ | 2.26 kHz |
-| $\kappa_{1_{eff}}/2\pi$ | 19.9 kHz |
-| $\kappa_b/2\pi$ | 22 MHz |
-| $\kappa_2/2\pi$ | 250 kHz |
-| $g_2/2\pi$ | 1.2 MHz |
-| $K/2\pi$ | -12 kHz |
-| $\kappa_φ/2\pi$ | < 10 kHz |
-| $n_th$ | 2 |
+| Metric | Measured value | Description |
+| --- | --- | --- |
+| $f_a$ | 1.079 GHz | Memory resonator frequency |
+| $f_b$ | 7.898 GHz | Buffer resonator frequency |
+| $\kappa_1/2\pi$ | 2.26 kHz | Memory resonator energy relaxation rate / single-photon loss rate |
+| $\kappa_{1_{eff}}/2\pi$ | 19.9 kHz | Effective $\kappa_1$ experienced by the cat qubit |
+| $\kappa_b/2\pi$ | 22 MHz | Buffer resonator energy relaxation rate / single-photon loss rate |
+| $\kappa_2/2\pi$ | 250 kHz | Engineered memory resonator two-photon dissipation rate |
+| $g_2/2\pi$ | 1.2 MHz | Hamiltonian two-photon exchange rate in between memory and buffer resonators |
+| $K/2\pi$ | -12 kHz | Thermal population of the memory resonator |
+| $\kappa_φ/2\pi$ | < 10 kHz | Memory resonator pure dephasing rate |
+| $n_th$ | 2 | Self-Kerr / anharmonicity of the memory resonator |
+
+For more details about what these parameters mean, read [our seminal Nature Physics paper](https://www.nature.com/articles/s41567-020-0824-x) ([arXiv link](https://arxiv.org/abs/1907.11729)).
 
 ## Gate implementation details
 
