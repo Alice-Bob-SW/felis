@@ -15,7 +15,7 @@ Boson 4 chips feature two independant [cat qubits](../../getting_started/why_cat
 - `average_nb_photons`
     - Supported values: 4 to 16
 
-Read more about backend parameters at (../../reference/supported_instructions.md#backend-parameters)
+Read more about backend parameters [here](../../reference/supported_instructions.md#backend-parameters)
 
 # Supported gates
 - `delay`
