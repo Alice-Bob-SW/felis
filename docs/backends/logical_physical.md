@@ -27,15 +27,3 @@ But **the logical mode is the perfect choice to run quantum algorithms**: you ca
 Also, the logical mode does not feature a noise bias as strong as in physical mode. The exact bias depends on the tuning of the chip (distance of the code, number of photons), but a good tuning can make bit-flip and phase-flip errors equally (un)likely.
 
 The logical mode is only possible with chips featuring enough physical cat qubits to run an effective error correction code. We estimate this minimal number to be somewhere between 5 (for a first demonstration of a single logical qubit) and 40 (for very high fidelities or multi-qubit logical operations).
-
-
-    - The physical mode mimicks the behavior of physical qubits and features a limited set of gates. You may use these physical qubits to implement quantum error correction, logical qubits, or logical gates. In this mode:
-        - Qubits feature a biased noise (fewer bit-flip errors, more phase-flip errors compared to a regular transmon)
-        - This noise bias can be tuned by adjusting `average_nb_photons`
-        - You can only use a limited set of gates (so-called “bias-preserving” gates)
-        - Two-qubit gates require qubits to be physically connected
-    - The logical mode mimicks the behavior of logical qubits (error-corrected qubits made out of several physical qubits). The logical mode features a universal set of gates and is used to run algorithms. In this mode:
-        - Error rates are lower at most settings, and can be tuned by adjusting `distance`
-        - Noise bias is usually reduced and might even be completely eliminated
-        - You can use any gate Qiskit is able to compile to (i.e. virtually any gate)
-        - You get all-to-all connectivity; you can run two-qubit gates between any two distinct qubits
