@@ -102,7 +102,7 @@ These parameters were measured in Alice & Bob’s lab and cannot be reproduced u
 | $g_2/2\pi$ | 1.2 MHz | Hamiltonian two-photon exchange rate in between memory and buffer resonators |
 | $K/2\pi$ | -12 kHz | Thermal population of the memory resonator |
 | $\kappa_φ/2\pi$ | < 10 kHz | Memory resonator pure dephasing rate |
-| $n_th$ | 2 | Self-Kerr / anharmonicity of the memory resonator |
+| $n_{th}$ | 2 | Self-Kerr / anharmonicity of the memory resonator |
 
 For more details about what these parameters mean, read [our seminal Nature Physics paper](https://www.nature.com/articles/s41567-020-0824-x) ([arXiv link](https://arxiv.org/abs/1907.11729)).
 
