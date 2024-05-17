@@ -2,7 +2,7 @@
 
 ## 1. Get a Felis Cloud subscription
 
-- Visit **(insert major cloud provider's URL here)** and follow the steps to subscribe to Felis Cloud.
+- Visit [https://console.cloud.google.com/marketplace/product/cloud-prod-0/felis-cloud](https://console.cloud.google.com/marketplace/product/cloud-prod-0/felis-cloud) and follow the steps to subscribe to Felis Cloud.
 
 ## 2. Get an API key
 
