@@ -6,7 +6,7 @@
 
 ## 2. Get an API key
 
-- Connect to your console at [https://api.alice-bob.com/console/](https://api.alice-bob.com/console/) using the **(major cloud provider)** account you used to subscribe to Felis Cloud.
+- Connect to your console at [https://api.alice-bob.com/console/](https://api.alice-bob.com/console/) using the Google account you used to subscribe to Felis Cloud.
 - Go the "API KEYS" tab to create an API key
 
 💡 **Note:** If you wish to share your Felis Cloud subscription with other people, create one API key for each person. Should the need arise, this makes it easier to control billing and revoke access rights.
