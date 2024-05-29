@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 0.7.0
+
+- Deprecated Python 3.7 for the provider. Python 3.7 has been officially deprecated since June 27th 2023. ([https://devguide.python.org/versions/](https://devguide.python.org/versions)) This was triggered after ARM chip users experienced issues with installing the provider since Numpy is not built for ARM Python 3.7.
+- Set max version of Python to 3.11 for the provider. Python 3.12+ introduces breaking changes to setuptools. The Alice & Bob team will support this version in the near future.
+- Changed default remote API URL to `api-gcp.alice-bob.com` instead of `api.alice-bob.com`, following the official release of Felis Cloud on Google Cloud Platform. GCP is now the main point of entry to use Felis Cloud.
+- Added a warning when instancing the `AliceBobRemoteProvider` if a new version of the provider is available on pypi.
+
 ## Version 0.6.0
 
 - Improved feedback while running circuits using the remote provider
