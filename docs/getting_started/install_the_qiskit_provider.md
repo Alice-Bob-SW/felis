@@ -2,7 +2,7 @@
 
 ## 1. Set up your environment
 
-You need a Python environment to use Felis (supported Python versions : 3.7 to 3.11).
+You need a Python environment to use Felis (supported Python versions: 3.8 to 3.11).
 
 We strongly recommend creating a new environment before attempting to install Felis. We assume you know how to do this. If you don’t, you can [go through the Python docs](https://www.python.org/about/gettingstarted/), or simply [reach out](../contact_us.md).
 
