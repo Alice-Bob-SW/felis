@@ -36,17 +36,17 @@ jobs:
       - name: Switch to $PAGES_BRANCH branch
         run: git checkout $PAGES_BRANCH
 
-      - name: Copy CNAME & index.html from $SOURCE_BRANCH branch
-        run: git checkout $SOURCE_BRANCH CNAME index.html
+      - name: Copy CNAME & index files from $SOURCE_BRANCH branch
+        run: git checkout $SOURCE_BRANCH CNAME index.html samples/index.html
 
       - name: Add files to commit
-        run: git add CNAME index.html
+        run: git add CNAME index.html samples/index.html
 
-      - name: Commit CNAME & index.html
+      - name: Commit CNAME & index files
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git commit -m "Add CNAME & index.html"
+          git commit -m "Add CNAME & index files"
 
       - name: Push changes
         run: git push origin $PAGES_BRANCH
