@@ -4,13 +4,13 @@
 
 All emulators in the remote provider are expected to be available 24/7.
 
-[`QPU:1Q:BOSON_4A`](../backends/backends_list/boson_4a.md) is available from **Monday to Friday** from **10am to 5pm, Paris time**, except on the dates listed below.
+[`QPU:1Q:BOSON_4A`](../backends/backends_list/boson_4a.md) is generally available from **Monday to Friday** from **10am to 5pm CET**, except on the dates listed below.
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
 
 ## Next planned unavailability dates
 
-- June 12th, 3pm CET to June 19th, 10am CET
+- June 12th, 3pm CET to July 8th, 10am CET
 
 💡 **Note:** We are still in the early stages of operating our chips on the cloud.
 
