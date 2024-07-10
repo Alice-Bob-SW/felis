@@ -10,7 +10,7 @@ Live status for backends is available at [https://api-gcp.alice-bob.com/console/
 
 ## Next planned unavailability dates
 
-- June 12th, 3pm CET to July 8th, 10am CET
+- June 12th, 3pm CET to July 16th, 10am CET
 
 💡 **Note:** We are still in the early stages of operating our chips on the cloud.
 
