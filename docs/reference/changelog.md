@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 0.7.2
+
+- Bump twine to version 5.1.1
+
+## Version 0.7.1
+
+- Use ipywidget to display job status on notebooks
+
 ## Version 0.7.0
 
 - Deprecated Python 3.7 for the provider. Python 3.7 has been officially deprecated since June 27th 2023. ([https://devguide.python.org/versions/](https://devguide.python.org/versions)) This was triggered after ARM chip users experienced issues with installing the provider since Numpy is not built for ARM Python 3.7.
