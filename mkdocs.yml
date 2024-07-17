@@ -29,7 +29,7 @@ nav:
     - Logical and physical backends: backends/logical_physical.md
     - Set backends parameters: backends/set_parameters.md
     - List of available backends:
-      - "QPU:1Q:BOSON_4A": backends/backends_list/boson_4a.md
+      - "QPU:1Q:BOSON_4A (or 4B, or 4C)": backends/backends_list/boson_4.md
       - "EMU:1Q:LESCANNE_2020": backends/backends_list/lescanne_2020.md
       - "EMU:6Q:PHYSICAL_CATS": backends/backends_list/6_physical_cats.md
       - "EMU:40Q:PHYSICAL_CATS": backends/backends_list/40_physical_cats.md

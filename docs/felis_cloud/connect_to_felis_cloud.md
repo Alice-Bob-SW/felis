@@ -19,7 +19,7 @@ Instead of the `AliceBobLocalProvider` used in most examples here, use the `Alic
 provider = AliceBobRemoteProvider('YOUR_API_KEY')
 ```
 
-You may then select backends which are only available through Felis Cloud, such as the [Boson 4](../reference/boson_4_chips.md) QPU [`QPU:1Q:BOSON_4A`](../backends/backends_list/boson_4a.md):
+You may then select backends which are only available through Felis Cloud, such as the one of the [Boson 4](../reference/boson_4_chips.md) QPUs: [Boson 4A, 4B or 4C](../backends/backends_list/boson_4.md):
 
 ```
 backend = provider.get_backend('QPU:1Q:BOSON_4A')

@@ -8,7 +8,9 @@ Depending on the backend, some settings affecting the backend's noise characteri
 
 | Model | average_nb_photons | kappa_1 | kappa_2 | distance | Availability |
 | --- | --- | --- | --- | --- | --- |
-| [QPU:1Q:BOSON_4A](../backends/backends_list/boson_4a.md) | ✅ | ❌ | ❌ | ❌ | Remote only |
+| [QPU:1Q:BOSON_4A](../backends/backends_list/boson_4.md) | ✅ | ❌ | ❌ | ❌ | Remote only |
+| [QPU:1Q:BOSON_4B](../backends/backends_list/boson_4.md) | ✅ | ❌ | ❌ | ❌ | Remote only |
+| [QPU:1Q:BOSON_4C](../backends/backends_list/boson_4.md) | ✅ | ❌ | ❌ | ❌ | Remote only |
 | [EMU:1Q:LESCANNE_2020](../backends/backends_list/lescanne_2020.md) | ✅ | ❌ | ❌ | ❌ | Remote & Local |
 | [EMU:6Q:PHYSICAL_CATS](../backends/backends_list/6_physical_cats.md) | ✅ | ✅ | ✅ | ❌ | Remote & Local |
 | [EMU:40Q:PHYSICAL_CATS](../backends/backends_list/40_physical_cats.md) | ✅ | ✅ | ✅ | ❌ | Remote & Local |
