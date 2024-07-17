@@ -1,13 +1,21 @@
-# QPU:1Q:BOSON_4A
+# QPU:1Q:BOSON_4A (or 4B, or 4C)
 
 # About this backend
-`QPU:1Q:BOSON_4A` is a real quantum chip located in Alice & Bob’s offices.
+The `QPU:1Q:BOSON_4x` backends are real quantum chips using a [Boson 4 design](../../reference/boson_4_chips.md), located in Alice & Bob’s offices
 
-It is the first chip using a [Boson 4 design](../../reference/boson_4_chips.md) ever released by Alice & Bob.
+ Three chips are currently available in rotation (usually, only one at a time):
+ 
+- `QPU:1Q:BOSON_4A`
+- `QPU:1Q:BOSON_4B`
+- `QPU:1Q:BOSON_4C`
+
+You may check which chip is currently online on [your status page](https://api-gcp.alice-bob.com/console/status).
 
 Boson 4 chips feature two independant [cat qubits](../../getting_started/why_cat_qubits.md) of identical design, one of which is exposed through this backend.
 
-`QPU:1Q:BOSON_4A` is only available through the remote provider, with a Felis Cloud subscription.
+`QPU:1Q:BOSON_4x` backends are only available through the remote provider, with a Felis Cloud subscription.
+
+💡 **Note:** While all Boson 4 chips feature roughly identical performance, we still expose them as different backends so you can know exactly which chip you used in a given experiment.
 
 ![A Boson 4 chip](../../media/backends/boson4.png)
 

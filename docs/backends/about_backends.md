@@ -14,7 +14,9 @@ Our backends are all named following the pattern `[EMU|QPU]:xxQ:NAME`, where:
 
 | Backend | Available in remote provider | Available in local provider |
 | --- | --- | --- |
-| [QPU:1Q:BOSON_4A](backends_list/boson_4a.md) | ✅ | ❌ |
+| [QPU:1Q:BOSON_4A](backends_list/boson_4.md) | ✅ | ❌ |
+| [QPU:1Q:BOSON_4B](backends_list/boson_4.md) | ✅ | ❌ |
+| [QPU:1Q:BOSON_4C](backends_list/boson_4.md) | ✅ | ❌ |
 | [EMU:1Q:LESCANNE_2020](backends_list/lescanne_2020.md) | ✅ | ✅ |
 | [EMU:6Q:PHYSICAL_CATS](backends_list/6_physical_cats.md) | ✅ | ✅ |
 | [EMU:40Q:PHYSICAL_CATS](backends_list/40_physical_cats.md) | ✅ | ✅ |

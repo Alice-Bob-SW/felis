@@ -22,11 +22,13 @@ We are currently working on a paper giving a more detailed description of the Bo
 
 ## Available Boson 4 backends
 
-You may run circuits on a Boson 4 chip using the [`QPU:1Q:BOSON_4A`](../backends/backends_list/boson_4a.md) backend ([Felis Cloud](../felis_cloud/about_felis_cloud.md) subscription required).
+You may run circuits on a Boson 4 chip using [one of the three Boson 4 backends](../backends/backends_list/boson_4.md) ([Felis Cloud](../felis_cloud/about_felis_cloud.md) subscription required).
 
 ## Main performance figures
 
 The figures below can all be reproduced using [this notebook](https://github.com/Alice-Bob-SW/felis/blob/main/samples/1_hardware_experiments/2%20-%20Boson%204%20tutorial.ipynb)
+
+💡 **Note**: The figures below were measured on Boson 4A. While Boson 4B and 4C feature similar performance, slight differences may exist.
 
 ### Lifetime
 
