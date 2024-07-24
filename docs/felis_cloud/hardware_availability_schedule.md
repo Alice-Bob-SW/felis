@@ -6,14 +6,10 @@ All emulators in the remote provider are expected to be available 24/7.
 
 ## Quantum hardware
 
+💡 **Note**: we are currently experiencing rare and random performance drops on `QPU:1Q:BOSON_4C`, which we are still investigating. If you come across abnormally bad results, [let us know](../contact_us.md) and try to rerun your experiments a few minutes later.
+
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Thurdsay, July 18th | 10am - 1pm CET | `QPU:1Q:BOSON_4C` |
-| Friday, July 19th | - | - |
-| Saturday, July 20th  | - | - |
-| Sunday, July 21st | - | - |
-| Monday, July 22nd | - | - |
-| Tuesday, July 23rd | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
 | Wednesday, July 24th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
 | Thurdsay, July 25th | 10am - 4pm CET | `QPU:1Q:BOSON_4C` |
 | Friday, July 26th | - | - |
@@ -38,6 +34,9 @@ All emulators in the remote provider are expected to be available 24/7.
 | Wednesday, August 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
 | Thurdsay, August 15th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
 | Friday, August 16th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
+| Saturday, August 17th | - | - |
+| Sunday, August 18th | - | - |
+
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
 
