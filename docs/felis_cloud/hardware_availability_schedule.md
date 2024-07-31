@@ -10,10 +10,8 @@ All emulators in the remote provider are expected to be available 24/7.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Monday, July 29th | - | - |
-| Tuesday, July 30th | - | - |
-| Wednesday, July 31st | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thurdsay, August 1st | 10am - 4pm CET | `QPU:1Q:BOSON_4C` |
+| Wednesday, July 31st | - | - |
+| Thurdsay, August 1st | - | - |
 | Friday, August 2nd | - | - |
 | Saturday, August 3rd | - | - |
 | Sunday, August 4th | - | - |
@@ -31,7 +29,11 @@ All emulators in the remote provider are expected to be available 24/7.
 | Friday, August 16th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
 | Saturday, August 17th | - | - |
 | Sunday, August 18th | - | - |
-
+| Monday, August 19th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
+| Tuesday, August 20th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
+| Wednesday, August 21st | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
+| Thurdsay, August 22nd | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
+| Friday, August 23rd | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
 
