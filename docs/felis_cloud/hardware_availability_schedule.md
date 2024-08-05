@@ -10,15 +10,10 @@ All emulators in the remote provider are expected to be available 24/7.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Wednesday, July 31st | - | - |
-| Thurdsay, August 1st | - | - |
-| Friday, August 2nd | - | - |
-| Saturday, August 3rd | - | - |
-| Sunday, August 4th | - | - |
 | Monday, August 5th | - | - |
-| Tuesday, August 6th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Wednesday, August 7th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thurdsay, August 8th | 10am - 4pm CET | `QPU:1Q:BOSON_4C` |
+| Tuesday, August 6th | - | - |
+| Wednesday, August 7th | - | - |
+| Thurdsay, August 8th | - | - |
 | Friday, August 9th | - | - |
 | Saturday, August 10th | - | - |
 | Sunday, August 11th | - | - |
