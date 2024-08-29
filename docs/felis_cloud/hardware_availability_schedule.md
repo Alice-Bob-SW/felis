@@ -15,18 +15,18 @@ All emulators in the remote provider are expected to be available 24/7.
 | Friday, August 30th | - | - |
 | Saturday, August 31st | - | - |
 | Sunday, September 1st | - | - |
-| Monday, September 2nd | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
-| Tuesday, September 3rd | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
-| Wednesday, September 4th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
-| Thurdsay, September 5th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
-| Friday, September 6th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
+| Monday, September 2nd | - | - |
+| Tuesday, September 3rd | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Wednesday, September 4th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thurdsay, September 5th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Friday, September 6th | - | - |
 | Saturday, September 7th | - | - |
 | Sunday, September 8th | - | - |
-| Monday, September 9th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
-| Tuesday, September 10th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
-| Wednesday, September 11th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
-| Thurdsay, September 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
-| Friday, September 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
+| Monday, September 9th | - | - |
+| Tuesday, September 10th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Wednesday, September 11th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thurdsay, September 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Friday, September 13th | - | - |
 | Saturday, September 14th | - | - |
 | Sunday, September 15th | - | - |
 
