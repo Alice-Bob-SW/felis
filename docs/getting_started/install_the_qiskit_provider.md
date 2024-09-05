@@ -38,7 +38,8 @@ circ = QuantumCircuit(1,1)
 circ.reset(0)
 circ.measure(0, 0)
 job = execute(circ, backend, shots=1_000)
-print(job.get_counts())
+res = job.result()
+print(res.get_counts())
 ```
 
 📝 **Note:** If you’re not familiar with Qiskit, we recommend reading this [short introduction](https://docs.quantum.ibm.com/start/hello-world).
