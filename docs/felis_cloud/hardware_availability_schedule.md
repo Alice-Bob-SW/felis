@@ -8,20 +8,21 @@ All emulators in the remote provider are expected to be available 24/7.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Monday, September 2nd | - | - |
-| Tuesday, September 3rd | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Wednesday, September 4th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thurdsay, September 5th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Friday, September 6th | - | - |
-| Saturday, September 7th | - | - |
-| Sunday, September 8th | - | - |
 | Monday, September 9th | - | - |
 | Tuesday, September 10th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Wednesday, September 11th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thurdsay, September 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Wednesday, September 11th | - | - |
+| Thurdsay, September 12th | - | - |
 | Friday, September 13th | - | - |
 | Saturday, September 14th | - | - |
 | Sunday, September 15th | - | - |
+| Monday, September 16th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Tuesday, September 17th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Wednesday, September 18th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thurdsay, September 19th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Friday, September 20th | - | - |
+| Saturday, September 21st | - | - |
+| Sunday, September 22nd | - | - |
+
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
 
