@@ -8,17 +8,10 @@ All emulators in the remote provider are expected to be available 24/7.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Monday, September 16th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Tuesday, September 17th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Wednesday, September 18th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thurdsay, September 19th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Friday, September 20th | - | - |
-| Saturday, September 21st | - | - |
-| Sunday, September 22nd | - | - |
 | Monday, September 23rd | - | - |
 | Tuesday, September 24th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
 | Wednesday, September 25th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thurdsay, September 26th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thurdsay, September 26th | 10am - 12am CET | `QPU:1Q:BOSON_4C` |
 | Friday, September 27th | - | - |
 | Saturday, September 28th | - | - |
 | Sunday, September 29th | - | - |
