@@ -60,7 +60,7 @@ Parameters may be set while initializing a backend:
 
 ```python
 from qiskit_alice_bob_provider import AliceBobLocalProvider
-from qiskit import QuantumCircuit, execute
+from qiskit import QuantumCircuit
 
 provider = AliceBobLocalProvider()
 
@@ -72,14 +72,14 @@ backend = local.get_backend('EMU:15Q:LOGICAL_EARLY', distance=13)
 circuit = QuantumCircuit(...)
 # ...
 
-execute(circuit, backend, shots=3000)
+backend.run(circuit, shots=3000)
 ```
 
 Or when executing a circuit:
 
 ```python
 from qiskit_alice_bob_provider import AliceBobRemoteProvider
-from qiskit import QuantumCircuit, execute
+from qiskit import QuantumCircuit
 
 # Replace the placeholder with your actual API key in the line below
 remote = AliceBobRemoteProvider(api_key='YOUR_API_KEY')
@@ -89,5 +89,5 @@ backend = remote.get_backend('EMU:1Q:LESCANNE_2020')
 circuit = QuantumCircuit(...)
 # ...
 
-execute(circuit, backend, shots=3000, average_nb_photons=3)
+backend.run(circuit, shots=3000, average_nb_photons=3)
 ```

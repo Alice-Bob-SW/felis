@@ -4,7 +4,7 @@ When sweeping over some parameters (for example, the number of photons in the ca
 
 ```python
 from qiskit_alice_bob_provider import AliceBobRemoteProvider
-from qiskit import QuantumCircuit, execute
+from qiskit import QuantumCircuit
 
 # Replace the placeholder with your actual API key in the line below
 remote = AliceBobRemoteProvider(api_key='YOUR_API_KEY')
@@ -18,7 +18,7 @@ circ.measure(0, 0)
 jobs = []
 shots = 1_000
 for nb_photons in range(2, 11):
-    jobs.append(execute(circ, backend, shots=shots, average_nb_photons=nb_photons))
+    jobs.append(backend.run(circ, shots=shots, average_nb_photons=nb_photons))
 
 results = [job.result() for job in jobs]
 # for example, computing the number of bit flips:
@@ -35,7 +35,7 @@ That’s because the API can run some parts of the processing in parallel. It al
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 from qiskit_alice_bob_provider import AliceBobRemoteProvider
-from qiskit import QuantumCircuit, execute
+from qiskit import QuantumCircuit
 
 # Replace the placeholder with your actual API key in the line below
 remote = AliceBobRemoteProvider(api_key='YOUR_API_KEY')
@@ -49,7 +49,7 @@ circ.measure(0, 0)
 shots = 1_000
 results = []
 for nb_photons in range(2, 11):
-    job = execute(circ, backend, shots=shots, average_nb_photons=nb_photons)
+    job = backend.run(circ, shots=shots, average_nb_photons=nb_photons)
     results.append(job.result())
 
 # for example, computing the number of bit flips:
