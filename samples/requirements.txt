@@ -122,6 +122,8 @@ nest-asyncio==1.5.8
 networkx==3.2.1
 nh3==0.2.18
 nodeenv==1.9.1
+notebook==7.0.8
+notebook_shim==0.2.4
 numba==0.59.1
 numpy==1.26.1
 orjson==3.10.6
@@ -172,13 +174,13 @@ pytz==2024.1
 PyYAML==6.0.1
 pyyaml_env_tag==0.1
 pyzmq==25.1.1
-qiskit==1.1.1
+qiskit==1.2.4
 qiskit-aer==0.14.2
 qiskit-algorithms==0.3.0
 qiskit-ibm-runtime==0.25.0
 qiskit-qir-alice-bob-fork==0.5.0rc0
-qiskit-alice-bob-provider==1.0.0rc0
-qrisp==0.4.4
+qiskit_alice_bob_provider==1.0.0
+qrisp==0.4.12
 qtconsole==5.5.0
 QtPy==2.4.1
 readme_renderer==44.0
