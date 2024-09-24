@@ -32,12 +32,12 @@ backend = ab.get_backend('EMU:1Q:LESCANNE_2020')
 You may then use `backend` as a target to execute a Qiskit circuit.
 
 ```python
-from qiskit import QuantumCircuit, execute
+from qiskit import QuantumCircuit
 
 circ = QuantumCircuit(1,1)
 circ.reset(0)
 circ.measure(0, 0)
-job = execute(circ, backend, shots=1_000)
+job = backend.run(circ, shots=1_000)
 res = job.result()
 print(res.get_counts())
 ```
