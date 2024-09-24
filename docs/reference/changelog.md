@@ -1,5 +1,30 @@
 # Changelog
 
+## Version 1.0.0
+
+- Migrated to Qiskit 1.2 (BREAKING CHANGES for 1.0) :
+    - Function `execute()` is removed in favor of `transpile()` + `backend.run()`
+    - `circuit.cnot()` gate should now be declared with `circuit.cx()`
+    - Python environments created with previous Qiskit versions need to be recreated
+    - For more details about other Qiskit 1.0 changes, you can read the [complete migration guide](https://docs.quantum.ibm.com/migration-guides/qiskit-1.0-features).
+- Specifying options for `get_backend()` no longer modifies the default 
+  options for this backend on the Alice & Bob provider Python object.
+
+Example to execute a circuit :
+```python
+# Legacy path
+from qiskit import execute
+
+job = execute(circuit, backend)
+
+# New path
+from qiskit import transpile
+
+new_circuit = transpile(circuit, backend)
+job = backend.run(new_circuit)
+```
+
+
 ## Version 0.7.2
 
 - Bump twine to version 5.1.1
