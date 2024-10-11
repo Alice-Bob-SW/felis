@@ -12,7 +12,7 @@ We start by getting one of the two logical backends ([`EMU:15Q:LOGICAL_EARLY`](.
 
 ```python
 from qiskit_alice_bob_provider import AliceBobLocalProvider
-from qiskit import QuantumCircuit, execute, transpile
+from qiskit import QuantumCircuit, transpile
 import numpy as np
 
 ab = AliceBobLocalProvider()
@@ -68,11 +68,11 @@ c: 1/═════════════════════════
 This circuit may then be executed like any Qiskit circuit:
 
 ```
-job = execute(circ, backend, shots=1_000)
+job = backend.run(circ, shots=1_000)
 print(job.result().get_counts())
 ```
 
-💡 **Note:** `execute` transpiles your circuit if you didn't do it manually, but transpiling yourself enables you to examine the circuit which is actually executed.
+💡 **Note:** `backend.run()` transpiles your circuit if you didn't do it manually, but transpiling yourself enables you to examine the circuit which is actually executed.
 
 Use logical backends to run quantum algorithms.
 
