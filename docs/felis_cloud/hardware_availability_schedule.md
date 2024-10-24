@@ -8,27 +8,6 @@ All emulators in the remote provider are expected to be available 24/7.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Monday, September 30th | - | - |
-| Tuesday, October 1st | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Wednesday, October 2nd | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thurdsay, October 3rd | - | - |
-| Friday, October 4th | - | - |
-| Saturday, October 5th | - | - |
-| Sunday, October 6th | - | - |
-| Monday, October 7th | - | - |
-| Tuesday, October 8th | - | - |
-| Wednesday, October 9th | - | - |
-| Thurdsay, October 10th | - | - |
-| Friday, October 11th | - | - |
-| Saturday, October 12th | - | - |
-| Sunday, October 13th | - | - |
-| Monday, October 14th | - | - |
-| Tuesday, October 15th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Wednesday, October 16th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thurdsay, October 17th |  10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Friday, October 18th | - | - |
-| Saturday, October 19th | - | - |
-| Sunday, October 20th | - | - |
 | Monday, October 21st | - | - |
 | Tuesday, October 22nd | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
 | Wednesday, October 23rd | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
@@ -36,6 +15,22 @@ All emulators in the remote provider are expected to be available 24/7.
 | Friday, October 25th | - | - |
 | Saturday, October 26th | - | - |
 | Sunday, October 27th | - | - |
+| Monday, October 28th | - | - |
+| Tuesday, October 29th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Wednesday, October 30th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thurdsay, November 1st | - |
+| Friday, November 2nd | - | - |
+| Saturday, November 3rd | - | - |
+| Sunday, November 4th | - | - |
+| Monday, November 5th | - | - |
+| Tuesday, November 6th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Wednesday, November 7th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thurdsay, November 8th |  10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Friday, November 9th | - | - |
+| Saturday, November 10th | - | - |
+| Sunday, November 11th | - | - |
+
+
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
 
