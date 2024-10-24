@@ -13,7 +13,7 @@ Here's an example using a physical backend, showing how cat qubits feature a bia
 First, we set up the provider and import dependencies:
 
 ```python
-from qiskit import QuantumCircuit, execute
+from qiskit import QuantumCircuit
 from qiskit.visualization import plot_histogram
 from qiskit_alice_bob_provider import AliceBobLocalProvider
 
@@ -34,7 +34,7 @@ Then, we design and execute a simple circuit sensitive to bit-flips (Prepare $\k
 c1 = QuantumCircuit(1, 1)
 c1.delay(1, unit='us')
 c1.measure(0, 0)
-job1 = execute(c1, backend, shots=1000, average_nb_photons=3)
+job1 = backend.run(c1, shots=1000, average_nb_photons=3)
 res1 = job1.result()
 plot_histogram(res1.get_counts())
 ```
@@ -47,7 +47,7 @@ c2 = QuantumCircuit(1, 1)
 c2.initialize('+', 0)
 c2.delay(1, unit='us')
 c2.measure_x(0, 0)
-job2 = execute(c2, backend, shots=1000, average_nb_photons=3)
+job2 = backend.run(c2, shots=1000, average_nb_photons=3)
 res2 = job2.result()
 plot_histogram(res2.get_counts())
 ```
