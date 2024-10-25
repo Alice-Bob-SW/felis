@@ -11,21 +11,21 @@ All emulators in the remote provider are expected to be available 24/7.
 | Monday, October 21st | - | - |
 | Tuesday, October 22nd | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
 | Wednesday, October 23rd | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thurdsay, October 24th |  10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thursday, October 24th |  10am - 5pm CET | `QPU:1Q:BOSON_4C` |
 | Friday, October 25th | - | - |
 | Saturday, October 26th | - | - |
 | Sunday, October 27th | - | - |
 | Monday, October 28th | - | - |
 | Tuesday, October 29th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
 | Wednesday, October 30th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thurdsay, November 1st | - |
+| Thursday, November 1st | - |
 | Friday, November 2nd | - | - |
 | Saturday, November 3rd | - | - |
 | Sunday, November 4th | - | - |
 | Monday, November 5th | - | - |
 | Tuesday, November 6th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
 | Wednesday, November 7th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thurdsay, November 8th |  10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thursday, November 8th |  10am - 5pm CET | `QPU:1Q:BOSON_4C` |
 | Friday, November 9th | - | - |
 | Saturday, November 10th | - | - |
 | Sunday, November 11th | - | - |
