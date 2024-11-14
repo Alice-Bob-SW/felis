@@ -8,27 +8,27 @@ All emulators in the remote provider are expected to be available 24/7.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Monday, October 28th | - | - |
-| Tuesday, October 29th | - | - |
-| Wednesday, October 30th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thursday, November 1st | - |
-| Friday, November 2nd | - | - |
-| Saturday, November 3rd | - | - |
-| Sunday, November 4th | - | - |
-| Monday, November 5th | - | - |
-| Tuesday, November 6th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Wednesday, November 7th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thursday, November 8th |  10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Friday, November 9th | - | - |
-| Saturday, November 10th | - | - |
-| Sunday, November 11th | - | - |
-| Monday, November 12th | - | - |
-| Tuesday, November 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Wednesday, November 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thursday, November 15th |  10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Friday, November 14th | - | - |
-| Saturday, November 15th | - | - |
-| Sunday, November 16th | - | - |
+| Monday, November 11th | - | - |
+| Tuesday, November 12th | - | - |
+| Wednesday, November 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thursday, November 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Friday, November 15th |  10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Saturday, November 16th | - | - |
+| Sunday, November 17th | - | - |
+| Monday, November 18th | - | - |
+| Tuesday, November 19th | - | - |
+| Wednesday, November 20th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thursday, November 21st | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Friday, November 22nd |  10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Saturday, November 23rd | - | - |
+| Sunday, November 24th | - | - |
+| Monday, November 25th | - | - |
+| Tuesday, November 26th | - | - |
+| Wednesday, November 27th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thursday, November 28th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Friday, November 29th |  10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Saturday, November 30th | - | - |
+| Sunday, December 1st | - | - |
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
 
