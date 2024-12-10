@@ -11,7 +11,7 @@ All emulators in the remote provider are expected to be available 24/7.
 | Monday, December 9th | - | - |
 | Tuesday, December 10th | 10am - 5pm CET | - |
 | Wednesday, December 11th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Thursday, December 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thursday, December 12th | 10am - 12pm CET | `QPU:1Q:BOSON_4C` |
 | Friday, December 13th | - | - |
 | Saturday, December 14th | - | - |
 | Sunday, December 15th | - | - |
