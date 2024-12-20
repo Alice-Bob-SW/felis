@@ -4,7 +4,7 @@
 
 - Migrated to Qiskit 1.3 :
     - Default `optimization_level` for `backend.transpile()` is changed from 1 to 2.
-- Transpilation now works correctly for backend targets with only Clifford + T gate basis
+- Transpilation now works correctly for backend targets with only Clifford + T gate basis (except for gates CRY, RCCX and RCCCX on macOS for now)
 - Alice & Bob custom options like `average_nb_photons` are not allowed for `backend.run()` with local provider because they will be ignored. They should be passed to `provider.get_backend()` instead.
 - Drop support for Python 3.8
 
