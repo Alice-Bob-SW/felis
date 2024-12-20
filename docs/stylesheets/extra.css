@@ -1,0 +1,39 @@
+/* Color palette. */
+:root {
+    --yellow: #fed731;
+    --teal: #00b5c8;
+    --bluegray: #3d4955;
+    --lightgray: #f7f8f9;
+}
+
+/* Remove all MUI shadows. */
+* {
+    box-shadow: none !important;
+}
+
+/* Change the default font and text color. */
+body {
+    --md-text-font: 'Rubik,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif';
+    --md-typeset-color: var(--bluegray);
+}
+
+/* Change site header color. */
+.md-header {
+    background-color: var(--bluegray);
+}
+
+.md-tabs {
+    background-color: var(--bluegray);
+}
+
+/* Remove margins around the logo. */
+.md-header__button.md-logo {
+    margin-left: 12px;
+    margin-right: 0px;
+    padding: 0;
+}
+
+/* Increase logo size. */
+.md-header__button.md-logo img {
+    height: 1.6rem;
+}
