@@ -8,29 +8,10 @@ All emulators in the remote provider are expected to be available 24/7.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Wednesday, December 18th | - | - |
-| Thursday, December 19th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Friday, December 20th | - | - |
-| Saturday, December 21st | - | - |
-| Sunday, December 22nd | - | - |
-| Monday, December 23rd | - | - |
-| Tuesday, December 24th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
-| Wednesday, December 25th | - | - |
-| Thursday, December 26th | - | - |
-| Friday, December 27th | - | - |
-| Saturday, December 28th | - | - |
-| Sunday, December 29th | - | - |
-| Monday, December 30th | - | - |
-| Tuesday, December 31st | - | - |
-| Wednesday, January 1st | - | - |
-| Thursday, January 2nd | - | - |
-| Friday, January 3rd | - | - |
-| Saturday, January 4th | - | - |
-| Sunday, January 5th | - | - |
 | Monday, January 6th | - | - |
-| Tuesday, January 7th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
-| Wednesday, January 8th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
-| Thursday, January 9th | 10am - 5pm CET | `QPU:1Q:BOSON_4B` |
+| Tuesday, January 7th | 12am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Wednesday, January 8th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
+| Thursday, January 9th | 10am - 5pm CET | `QPU:1Q:BOSON_4C` |
 | Friday, January 10th | - | - |
 | Saturday, January 11th | - | - |
 | Sunday, January 12th | - | - |
