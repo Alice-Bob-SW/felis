@@ -179,7 +179,7 @@ qiskit-aer==0.14.2
 qiskit-algorithms==0.3.0
 qiskit-ibm-runtime==0.25.0
 qiskit-qir-alice-bob-fork==0.5.0rc0
-qiskit_alice_bob_provider==1.1.0
+qiskit_alice_bob_provider==1.1.1
 qrisp==0.4.12
 qtconsole==5.5.0
 QtPy==2.4.1
