@@ -1,5 +1,41 @@
 # Changelog
 
+## Version 1.1.1
+
+`get_memory` functionality for Remote Providers:
+
+* Introduced the `get_memory` function for the result of an `AliceBobRemoteProvider` job, enabling users to retrieve individual shot results from quantum circuit executions.
+* This feature aligns with functionality already available in the `AliceBobLocalProvider`, ensuring consistency across providers.
+
+Example Usage
+Here’s how to retrieve the memory of a quantum circuit execution:
+```python
+from qiskit_alice_bob_provider import AliceBobRemoteProvider
+from qiskit import transpile
+
+# Initialize the remote provider
+remote_provider = AliceBobRemoteProvider(
+    '<API_KEY>',
+    url='https://api.alice-bob.com/'
+)
+
+# Retrieve the backend and execute the circuit
+backend = remote_provider.get_backend('<backend>')
+circuit = <...>  # Define your quantum circuit
+transpiled_circuit = transpile(circuit, backend)
+job = backend.run(transpiled_circuit, shots=10000, memory=True)
+
+# Retrieve the memory of the circuit
+result = job.result()
+memory = result.get_memory()
+
+print(memory)
+```
+
+**Key Notes**
+
+- The `memory=True` parameter in the `backend.run` method ensures shot-by-shot results are captured and retrievable.
+
 ## Version 1.1.0
 
 - Migrated to Qiskit 1.3 :
