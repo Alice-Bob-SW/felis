@@ -23,7 +23,7 @@ Boson 4 chips feature two independant [cat qubits](../../getting_started/why_cat
 - `average_nb_photons`
     - Supported values: 4 to 16
 
-Read more about backend parameters [here](../../reference/supported_instructions.md#backend-parameters)
+Read more about backend parameters [here](../set_parameters.md)
 
 # Supported gates
 - `delay`
@@ -36,7 +36,7 @@ Read more about backend parameters [here](../../reference/supported_instructions
 - `measure(0, clbit_index)`
 - `measure_x(0, clbit_index)`
 
-Read more about supported gates [here](../../reference/supported_instructions.md#supported-gates).
+Read more about supported gates [here](../../reference/supported_instructions.md).
 
 # Supported providers
 - ❌ ~~`AliceBobLocalProvider`~~
