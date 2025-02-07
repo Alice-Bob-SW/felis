@@ -59,7 +59,7 @@ circ.x(0)
 
 The API exposes the list of available targets (the equivalent of Qiskit backends) and details for each of them the list of supported instructions.
 
-[https://api.alice-bob.com/v1/targets/](https://api.alice-bob.com/v1/targets/)
+[https://api-gcp.alice-bob.com/v1/targets/](https://api-gcp.alice-bob.com/v1/targets/)
 
 - Here’s a sample response (for the `EMU:1Q:LESCANNE_2020` model only).
     

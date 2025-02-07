@@ -2,13 +2,13 @@
 
 If you want to integrate Felis with other tools, you may need to interact directly with our API.
 
-It can be accessed at [https://api.alice-bob.com/v1/](https://api.alice-bob.com/v1/).
+It can be accessed at [https://api-gcp.alice-bob.com/v1/](https://api-gcp.alice-bob.com/v1/).
 
 Here’s an example listing all jobs, pending or completed:
 
 ```python
 curl --request GET \
-  --url https://api.alice-bob.com//v1/jobs/ \
+  --url https://api-gcp.alice-bob.com//v1/jobs/ \
   --header 'Authorization: Basic <API key>'
 ```
 
@@ -18,4 +18,4 @@ Use the same API key with the API as with the Qiskit provider `AliceBobRemotePro
 
 The up-to-date API reference can be accessed here: 
 
-[Alice & Bob - Cloud API - ReDoc](https://api.alice-bob.com/reference)
+[Alice & Bob - Cloud API - ReDoc](https://api-gcp.alice-bob.com/reference)
