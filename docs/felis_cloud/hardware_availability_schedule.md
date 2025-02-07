@@ -12,10 +12,10 @@ All emulators in the remote provider are expected to be available 24/7.
 | Tuesday, February 4th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Wednesday, February 5th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Thursday, February 6th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, February 7th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Friday, February 7th | - | - |
 | Saturday, February 8th | - | - |
 | Sunday, February 9th | - | - |
-| Monday, February 10th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Monday, February 10th | - | - |
 | Tuesday, February 11th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Wednesday, February 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Thursday, February 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
