@@ -20,8 +20,8 @@ Our backends are all named following the pattern `[EMU|QPU]:xxQ:NAME`, where:
 | [EMU:1Q:LESCANNE_2020](backends_list/lescanne_2020.md) | ✅ | ✅ |
 | [EMU:6Q:PHYSICAL_CATS](backends_list/6_physical_cats.md) | ✅ | ✅ |
 | [EMU:40Q:PHYSICAL_CATS](backends_list/40_physical_cats.md) | ✅ | ✅ |
-| [EMU:15Q:LOGICAL_EARLY](#15-logical-qubits) | ✅ | ✅ |
-| [EMU:40Q:LOGICAL_TARGET](#40-logical-qubits) | ✅ | ✅ |
+| [EMU:15Q:LOGICAL_EARLY](backends_list/logical_early.md) | ✅ | ✅ |
+| [EMU:40Q:LOGICAL_TARGET](backends_list/logical_target.md) | ✅ | ✅ |
 
 Supported instructions depend on each backend. Click a backends' name to see the instructions it supports.
 
