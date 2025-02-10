@@ -8,20 +8,20 @@ All emulators in the remote provider are expected to be available 24/7.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Monday, February 3rd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Tuesday, February 4th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Wednesday, February 5th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Thursday, February 6th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, February 7th | - | - |
-| Saturday, February 8th | - | - |
-| Sunday, February 9th | - | - |
 | Monday, February 10th | - | - |
-| Tuesday, February 11th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Wednesday, February 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Tuesday, February 11th | - | - |
+| Wednesday, February 12th | - | - |
 | Thursday, February 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Friday, February 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Saturday, February 15th | - | - |
 | Sunday, February 16th | - | - |
+| Monday, February 17th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Tuesday, February 18th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Wednesday, February 19th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Thursday, February 20th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Friday, February 21st | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Saturday, February 22nd | - | - |
+| Sunday, February 23rd | - | - |
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
 
