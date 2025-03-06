@@ -8,20 +8,27 @@ All emulators in the remote provider are expected to be available 24/7.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Monday, February 10th | - | - |
-| Tuesday, February 11th | - | - |
-| Wednesday, February 12th | - | - |
-| Thursday, February 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, February 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Saturday, February 15th | - | - |
-| Sunday, February 16th | - | - |
-| Monday, February 17th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Tuesday, February 18th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Wednesday, February 19th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Thursday, February 20th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, February 21st | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Saturday, February 22nd | - | - |
-| Sunday, February 23rd | - | - |
+| Monday, March 3rd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Tuesday, March 4th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Wednesday, March 5th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Thursday, March 6th | - | - |
+| Friday, March 7th | - | - |
+| Saturday, March 8th | - | - |
+| Sunday, March 9th | - | - |
+| Monday, March 10th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Tuesday, March 11th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Wednesday, March 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Thursday, March 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Friday, March 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Saturday, March 15th | - | - |
+| Sunday, March 16th | - | - |
+| Monday, March 17th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Tuesday, March 18th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Wednesday, March 19th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Thursday, March 20th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Friday, March 21st | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Saturday, March 22nd | - | - |
+| Sunday, March 23rd | - | - |
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
 
