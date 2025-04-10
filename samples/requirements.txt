@@ -220,7 +220,7 @@ tomlkit==0.13.0
 tornado==6.3.3
 tqdm==4.66.1
 traitlets==5.14.3
-tweedledum @ git+https://github.com/Alice-Bob-SW/tweedledum@147da4eb145c4a10d66a902bc7e2c6b5a7475768
+tweedledum @ git+https://github.com/Alice-Bob-SW/tweedledum@1.1.2-ab.2
 twine==5.1.1
 typer==0.12.3
 types-mock==5.1.0.0
