@@ -26,10 +26,16 @@ All emulators in the remote provider are expected to be available 24/7.
 | Tuesday, April 22nd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Wednesday, April 23rd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Thursday, April 24th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, April 25th | 10am - 5pm CET | - |
+| Friday, April 25th | - | - |
 | Saturday, April 26th | - | - |
 | Sunday, April 27th | - | - |
-
+| Monday, April 28th | - | - |
+| Tuesday, April 29th | - | - |
+| Wednesday, April 30th | - | - |
+| Thursday, May 1st | - | - |
+| Friday, May 2nd | - | - |
+| Saturday, May 3rd | - | - |
+| Sunday, May 4th | - | - |
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
 
