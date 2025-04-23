@@ -24,7 +24,7 @@ Boson 4 will be **offline for maintenance** from April 25th to May 11th (include
 | Saturday, May 18th | - | - |
 | Sunday, May 19th | - | - |
 
-Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
+Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status).
 
 💡 **Note:** We are still in the early stages of operating our chips on the cloud.
 
