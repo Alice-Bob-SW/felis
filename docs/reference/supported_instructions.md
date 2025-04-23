@@ -4,39 +4,34 @@
 
 ### Custom Felis gates
 
-All Felis backends support two custom Qiskit gates: `initialize` and `measure_x`:
+All Felis backends support two custom gates: `initialize` and `measure_x`:
 
 - `initialize(value, qubit_index)`
     - It initializes qubit `qubit_index` to one of four supported `value`:   `'0'`, `'1'`, `'+'`, `'-'`
 
 - `measure_x(qubit_index, clbit_index)`
     - It performs an X measurement on qubit `qubit_index` and stores the result in the classical bit `clbit_index`
-    - The native Qiskit equivalent would be `H` + `measure`, but:
-		- In physical backends, `H` is not supported
-		- In logical backends, `measure_x` a less costly way to perform measurements in the X basis than `H` + `measure`
+
+While these gates can be theoretically recreated using `X`, `H` and `Z` gates, they are still needed because:
+
+- In physical backends, `H` is not supported
+- In logical backends, they are a less costly way to initialize and measure than by using several gates
 
 In addition to these two gates, you may use some or all of the other gates listed in the [Qiskit documentation](https://docs.quantum.ibm.com/api/qiskit/).
-
-Gates (from Felis or from Qiskit) must be added to a Qiskit `QuantumCircuit`. For example:
-
-```python
-from qiskit import QuantumCircuit
-
-circ = QuantumCircuit(1,1)
-circ.x(0)
-```
 
 The sections below list which gates you may use depending on the backend you're using.
 
 ### Logical backends
 
 We have two candidate logical gate sets for our future error-corrected quantum processors:
+
 - Hadamard + Toffoli
 - Clifford + T
 
 Depending on the use case, one may yield better results than the other. In the scope of Felis' logical backends, we chose to support both T and Toffoli gates, so you can choose to which gate set you will transpile your programs. Our engine currently only transpiles to Clifford + T.
 
 More precisely, the gates natively supported by all logical backends are:
+
 - `initialize` (custom Felis gate)
 - `measure_x` (custom Felis gate)
 - `delay` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/circuit#delay))
