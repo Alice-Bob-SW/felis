@@ -1,5 +1,8 @@
 # Lescanne 2020
 
+| Backend name | `EMU:1Q:LESCANNE_2020` |
+| Backend type | Emulator, physical |
+
 # About this backend
 `EMU:1Q:LESCANNE_2020` is a numerical model emulating the processor used in the [seminal paper](https://arxiv.org/pdf/1907.11729.pdf) by Raphaël Lescanne in 2020, featuring a single cat qubit.
 
@@ -10,8 +13,6 @@ This numerical model is configured to act as a digital twin of the chip used in 
 - Pauli error probabilities interpolated for the “delay/idle” instruction from the T_bf and Gamma_pf plots in the paper
 
 Please note that this design dates back to 2020 and does not represent the current performance of Alice & Bob's cat qubits. Better designs such as [the ones documented here](https://alice-bob.com/2023/07/21/concept-cats-designing-better-qubits/) have been introduced and will soon be available through Felis.
-
-A sample notebook showing this backend's bit-flip and phase-flip scaling is available at https://github.com/Alice-Bob-SW/felis/blob/main/samples/1_hardware_experiments/1%20-%20Bit-flip%20and%20phase-flip%20scaling%20on%20a%20physical%20qubit.ipynb.
 
 # Supported backend parameters
 - `average_nb_photons`
@@ -39,17 +40,9 @@ Read more about supported gates [here](../../reference/supported_instructions.md
 N/A - This backend features a single qubit.
 
 # Expected performance
-See [Boson 4 chips](../../reference/boson_4_chips.md)
+A sample notebook showing this backend's bit-flip and phase-flip scaling is available at https://github.com/Alice-Bob-SW/felis/blob/main/samples/1_hardware_experiments/1%20-%20Bit-flip%20and%20phase-flip%20scaling%20on%20a%20physical%20qubit.ipynb.
 
 # Availability schedule
-See [Hardware availability schedule](../../felis_cloud/hardware_availability_schedule.md)
+As an emulator, this backend is expected to be available 24/7.
 
-
-
-```python
-backend = remote.get_backend('EMU:1Q:LESCANNE_2020')
-# or 
-backend = local.get_backend('EMU:1Q:LESCANNE_2020')
-```
-
-This backend 
+Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status).
