@@ -23,9 +23,11 @@ Our backends are all named following the pattern `[EMU|QPU]:xxQ:NAME`, where:
 | [EMU:15Q:LOGICAL_EARLY](backends_list/logical_early.md) | ✅ | ✅ |
 | [EMU:40Q:LOGICAL_TARGET](backends_list/logical_target.md) | ✅ | ✅ |
 
-Supported instructions depend on each backend. Click a backends' name to see the instructions it supports.
+Supported instructions depend on each backend.
 
-## Checking available backends
+Click a backends' name to see the instructions it supports, or check the [supported_instructions](../reference/supported_instructions.md) page.
+
+## How to check available backends
 
 You may list the backends supported by your version of the provider.
 

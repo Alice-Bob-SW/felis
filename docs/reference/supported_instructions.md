@@ -2,11 +2,56 @@
 
 ## Supported Qiskit gates
 
+### Custom Felis gates
+
+All Felis backends support two custom Qiskit gates: `initialize` and `measure_x`:
+
+- `initialize(value, qubit_index)`
+    - It initializes qubit `qubit_index` to one of four supported `value`:   `'0'`, `'1'`, `'+'`, `'-'`
+
+- `measure_x(qubit_index, clbit_index)`
+    - It performs an X measurement on qubit `qubit_index` and stores the result in the classical bit `clbit_index`
+    - The native Qiskit equivalent would be `H` + `measure`, but:
+		- In physical backends, `H` is not supported
+		- In logical backends, `measure_x` a less costly way to perform measurements in the X basis than `H` + `measure`
+
+In addition to these two gates, you may use some or all of the other gates listed in the [Qiskit documentation](https://docs.quantum.ibm.com/api/qiskit/).
+
+Gates (from Felis or from Qiskit) must be added to a Qiskit `QuantumCircuit`. For example:
+
+```python
+from qiskit import QuantumCircuit
+
+circ = QuantumCircuit(1,1)
+circ.x(0)
+```
+
+The sections below list which gates you may use depending on the backend you're using.
+
 ### Logical backends
 
-Logical backends ([`EMU:15Q:LOGICAL_EARLY`](../backends/backends_list/logical_early.md) and [`EMU:40Q:LOGICAL_TARGET`](../backends/backends_list/logical_target.md)) support a universal set of gates, so they should run any gate listed in [https://qiskit.org/documentation/tutorials/circuits/3_summary_of_quantum_operations.html](https://qiskit.org/documentation/tutorials/circuits/3_summary_of_quantum_operations.html).
+We have two candidate logical gate sets for our future error-corrected quantum processors:
+- Hadamard + Toffoli
+- Clifford + T
 
-If the gate is not part of the backend's native gate set, it will be implemented through transpilation, as shown in [this example](../getting_started/logical_example.md).
+Depending on the use case, one may yield better results than the other. In the scope of Felis' logical backends, we chose to support both T and Toffoli gates, so you can choose to which gate set you will transpile your programs. Our engine currently only transpiles to Clifford + T.
+
+More precisely, the gates natively supported by all logical backends are:
+- `initialize` (custom Felis gate)
+- `measure_x` (custom Felis gate)
+- `delay` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/circuit#delay))
+- `x` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.XGate))
+- `z` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.ZGate))
+- `measure` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/circuit#measure))
+- `t` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.TGate))
+- `tdg` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.TdgGate))
+- `h` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.HGate))
+- `s` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.SGate))
+- `sdg` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.SdgGate))
+- `cx` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.CXGate))
+- `ccx` ([native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.CCXGate))
+
+If the gate is not part of this native gate set, it will be implemented through transpilation, as shown in [this example](../getting_started/logical_example.md).
 
 ### Physical backends
 
@@ -23,50 +68,11 @@ Physical backends support a limited set of gates, summarized in this table:
 | `measure` | ✅ | ✅ | ✅ |
 | `measure_x` | ✅ | ✅ | ✅ |
 
-More information about these gates:
-
-- `delay(duration, qarg=qubit_index, unit='ns')`
-    - This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.Delay)
-    - It attempts to preserve the state of qubit `qubit_index` during the specified `duration` and `unit`
-    - Minimum value: 1 ns
-- `initialize(value, qubit_index)`
-    - This is a custom Felis gate
-    - It initializes qubit `qubit_index` to one of four supported `value`:   `'0'`, `'1'`, `'+'`, `'-'`
-- `z(qubit_index)`
-    - This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.ZGate)
-    - It performs a phase-flip (transforming $\ket{+}$ into $\ket{-}$ and the reverse) on qubit `qubit_index`
-- `x(qubit_index)`
-    - This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.XGate)
-    - It performs a bit-flip (transforming $\ket{0}$ into $\ket{1}$ and the reverse) on qubit `qubit_index`
-- `rz(angle, qubit_index)`
-	- This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.RZGate)
-	- It performs a rotation of angle `angle` around the Z axis on qubit `qubit_index`
-- `cx(qubit_index_1, qubit_index_2)`
-	- This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.CXGate)
-	- It performs a controlled X gate (also called "CNOT") between qubits `qubit_index_1` and `qubit_index_2`
-	- It is only available on backends featuring at least 2 qubits
-- `measure(qubit_index, clbit_index)`
-    - This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.Measure)
-    - It performs a Z measurement on qubit `qubit_index` and stores the result in the classical bit `clbit_index`
-- `measure_x(qubit_index, clbit_index)`
-    - This is a custom Felis gate
-    - It performs an X measurement on qubit `qubit_index` and stores the result in the classical bit `clbit_index`
-    - The native Qiskit equivalent would be `H` + `measure`, but `H` is not supported by physical backends.
-
 Note that these operations are all bias-preserving (i.e. they do not convert a phase-flip error into a bit-flip error).
 
-Any instruction other than those listed above is not supported by physical backends.
+Because this gate set is not universal, transpiling an arbitrary circuit for physical backends is usually not possible. Physical backends are meant to run error correction experiments, rather than algorithms. If you want to run algorithms, consider using logical backends instead.
 
-To know which gate is supported by which backend, check your backend's page in the [Backends section](../backends/about_backends.md)
-
-Gates must be added to a Qiskit `QuantumCircuit`. For example:
-
-```python
-from qiskit import QuantumCircuit
-
-circ = QuantumCircuit(1,1)
-circ.x(0)
-```
+To know which gate is supported by which backend, check the table above or your backend's page in the [Backends section](../backends/about_backends.md)
 
 ## Supported QIR instructions
 
