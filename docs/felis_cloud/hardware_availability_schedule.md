@@ -15,6 +15,8 @@ All emulators in the remote provider are expected to be available 24/7.
 
 Boson 4 will be **offline for maintenance** from April 25th to May 11th (included).
 
+| Date | Availability window | Chip |
+| --- | --- | --- |
 | Sunday, May 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Monday, May 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Tuesday, May 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
