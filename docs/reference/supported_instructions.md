@@ -10,7 +10,20 @@ If the gate is not part of the backend's native gate set, it will be implemented
 
 ### Physical backends
 
-Physical backends support a limited set of gates among the following:
+Physical backends support a limited set of gates, summarized in this table:
+
+| Instruction | [QPU:1Q:BOSON_4x] | [EMU:1Q:LESCANNE_2020] | [EMU:6/40Q:PHYSICAL_CATS] |
+| --- | --- | --- | --- |
+| `delay` | ✅ | ✅ | ✅ |
+| `initialize` | ✅ | ✅ | ✅ |
+| `z` | ✅ | ✅ | ✅ |
+| `x` | ✅ | ❌ | ✅ |
+| `rz` | ❌ | ✅ | ✅ |
+| `cx` | ❌ | ❌ | ✅ |
+| `measure` | ✅ | ✅ | ✅ |
+| `measure_x` | ✅ | ✅ | ✅ |
+
+More information about these gates:
 
 - `delay(duration, qarg=qubit_index, unit='ns')`
     - This is a [native Qiskit gate](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.Delay)
