@@ -29,6 +29,7 @@ Read more about backend parameters [here](../set_parameters.md)
 - `delay`
     - 💡 **Note:** Be careful when using long delays. Circuits taking longer than 15 minutes to execute (circuit duration * number of shots) will be refused by our API, so that processing time is shared fairly between all users.
 - `initialize(value, 0)`
+    - `value` can only be one of the following: `0`, `1`, `+` or `-`
 - `z(0)`
 - `x(0)`
     - 💡 **Note:** The `x` gate is implemented virtually in this backend, at the transpilation step
