@@ -17,14 +17,13 @@ Boson 4 will be **offline for maintenance** from April 25th to May 11th (include
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Sunday, May 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Monday, May 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Tuesday, May 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Wednesday, May 15th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Thursday, May 16th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, May 17th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Saturday, May 18th | - | - |
-| Sunday, May 19th | - | - |
+| Monday, May 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Tuesday, May 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Wednesday, May 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Thursday, May 15th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Friday, May 16th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Saturday, May 17th | - | - |
+| Sunday, May 18th | - | - |
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
 
