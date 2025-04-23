@@ -8,34 +8,21 @@ All emulators in the remote provider are expected to be available 24/7.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Monday, April 7th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Tuesday, April 8th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Wednesday, April 9th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Thursday, April 10th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, April 11th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Saturday, April 12th | - | - |
-| Sunday, April 13th | - | - |
-| Monday, April 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Tuesday, April 15th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Wednesday, April 16th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Thursday, April 17th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, April 18th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Saturday, April 19th | - | - |
-| Sunday, April 20th | - | - |
 | Monday, April 21st | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Tuesday, April 22nd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Wednesday, April 23rd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Thursday, April 24th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, April 25th | - | - |
-| Saturday, April 26th | - | - |
-| Sunday, April 27th | - | - |
-| Monday, April 28th | - | - |
-| Tuesday, April 29th | - | - |
-| Wednesday, April 30th | - | - |
-| Thursday, May 1st | - | - |
-| Friday, May 2nd | - | - |
-| Saturday, May 3rd | - | - |
-| Sunday, May 4th | - | - |
+
+Boson 4 will be **offline for maintenance** from April 25th to May 11th (included).
+
+| Sunday, May 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Monday, May 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Tuesday, May 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Wednesday, May 15th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Thursday, May 16th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Friday, May 17th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Saturday, May 18th | - | - |
+| Sunday, May 19th | - | - |
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status)
 
