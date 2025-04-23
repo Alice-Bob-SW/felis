@@ -17,6 +17,12 @@ This backend is configured to have the same properties as the qubits used in the
 # Supported backend parameters
 - `average_nb_photons`
     - Supported values: 4 and above
+- `kappa_1`
+    - Supported values: 10 and above
+- `kappa_2`
+    - Supported values: 100 and above
+
+💡 The `kappa_1 / kappa_2` ratio must be between 1e-7 and 1e-1
 
 Read more about backend parameters [here](../set_parameters.md)
 
