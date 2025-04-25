@@ -35,6 +35,7 @@ nav:
       - "EMU:40Q:PHYSICAL_CATS": backends/backends_list/40_physical_cats.md
       - "EMU:15Q:LOGICAL_EARLY": backends/backends_list/logical_early.md
       - "EMU:40Q:LOGICAL_TARGET": backends/backends_list/logical_target.md
+      - "EMU:40Q:LOGICAL_NOISELESS": backends/backends_list/logical_noiseless.md
 
   - Reference:
     - Frequently asked questions: reference/faq.md
