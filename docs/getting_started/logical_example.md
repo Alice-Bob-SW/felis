@@ -76,12 +76,10 @@ print(job.result().get_counts())
 
 Use logical backends to run quantum algorithms.
 
-Don't hesitate to play with the `distance`, `kappa_1`, `kappa_2` and `average_nb_photons` settings to change the noise characteristics of your backend and study how this affects your results (read [Supported instructions](../reference/supported_instructions.md) for more details about these parameters and how to set them).
+Don't hesitate to play with the `distance`, `kappa_1`, `kappa_2` and `average_nb_photons` settings to change the noise characteristics of your backend and study how this affects your results.
 
-⚠️ **Warning:** As you'll notice above, the native gate set of our logical backends include a T gate, which is not planned to be a native logical gate in our target architecture.
+You may:
+- Read [Supported instructions](../reference/supported_instructions.md) for more details about these parameters and how to set them)
+- Check out our [sample notebook](https://github.com/Alice-Bob-SW/felis/blob/main/samples/2_algorithms/4%20-%20Benchmarking%20a%20logical%20cat%20qubit%20processor%20through%20the%20SWAP%20test.ipynb) showing how to perform this study
 
-Our current target logical gate set is Clifford + Toffoli, which has been proved to be universal:
-[https://arxiv.org/pdf/quant-ph/0205115.pdf](https://arxiv.org/pdf/quant-ph/0205115.pdf)
-[https://arxiv.org/pdf/quant-ph/0301040.pdf](https://arxiv.org/pdf/quant-ph/0301040.pdf)
-
-We are working on a compilation engine which will target Clifford + Toffoli, but our shortcut with the T gate lets you experiment with the logical mode earlier.
+💡 **Note:** As you'll notice above, circuits are transpiled to Clifford + T gates, but our logical backends also natively support Toffoli gates. We are considering using the Clifford + Toffoli gate set instead of Clifford + T for some applications. While the transpilation engine does not (yet) compile to this gate set, you are free to develop your own engine and try it out using our logical backends!
