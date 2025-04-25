@@ -1,7 +1,8 @@
 # 6 physical cats
 
-| Backend name | `EMU:6Q:PHYSICAL_CATS` |
-| Backend type | Emulator, physical |
+Backend name : `EMU:6Q:PHYSICAL_CATS`
+
+Backend type : Emulator, physical
 
 # About this backend
 `EMU:6Q:PHYSICAL_CATS` reproduces the behavior of a chip featuring 6 cat qubits, with a circular neighbor connectivity (each qubit has two neighbors).
