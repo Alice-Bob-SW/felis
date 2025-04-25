@@ -9,18 +9,7 @@
 It is meant to study the quality of your transpilation, as it runs faster than the other noisy backends.
 
 # Supported backend parameters
-- `average_nb_photons`
-    - Supported values: 4 and above
-- `distance`
-    - Supported values: 3 and above, odd integers only
-- `kappa_1`
-    - Supported values: 10 and above
-- `kappa_2`
-    - Supported values: 100 and above
-
-💡 The `kappa_1 / kappa_2` ratio must be between 1e-7 and 1e-1
-
-Read more about backend parameters [here](../set_parameters.md)
+This backend does not have parameters, since it does not have a noise model.
 
 # Supported gates
 - `initialize` ([custom Felis gate](../../reference/supported_instructions.md))
