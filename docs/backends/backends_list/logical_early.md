@@ -1,7 +1,8 @@
 # 15 logical qubits
 
-| Backend name | `EMU:15Q:LOGICAL_EARLY` |
-| Backend type | Emulator, logical |
+Backend name : `EMU:15Q:LOGICAL_EARLY`
+
+Backend type : Emulator, logical
 
 # About this backend
 `EMU:15Q:LOGICAL_EARLY` reproduces what might be the behavior of one of the first useful logical chips, featuring 15 logical qubits with conservative hypotheses on qubit quality.

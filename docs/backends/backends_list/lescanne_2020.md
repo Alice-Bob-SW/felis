@@ -1,7 +1,8 @@
 # Lescanne 2020
 
-| Backend name | `EMU:1Q:LESCANNE_2020` |
-| Backend type | Emulator, physical |
+Backend name : `EMU:1Q:LESCANNE_2020`
+
+Backend type : Emulator, physical
 
 # About this backend
 `EMU:1Q:LESCANNE_2020` is a numerical model emulating the processor used in the [seminal paper](https://arxiv.org/pdf/1907.11729.pdf) by Raphaël Lescanne in 2020, featuring a single cat qubit.

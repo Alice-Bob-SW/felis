@@ -1,7 +1,8 @@
 # 40 logical qubits, noiseless
 
-| Backend name | `EMU:40Q:LOGICAL_NOISELESS` |
-| Backend type | Emulator, logical |
+Backend name : `EMU:40Q:LOGICAL_NOISELESS`
+
+Backend type : Emulator, logical
 
 # About this backend
 `EMU:40Q:LOGICAL_NOISELESS` is a noiseless backend featuring the same native gate set as the other logical backends, but without a noise model.

@@ -1,7 +1,8 @@
 # 40 physical cats
 
-| Backend name | `EMU:40Q:PHYSICAL_CATS` |
-| Backend type | Emulator, physical |
+Backend name : `EMU:40Q:PHYSICAL_CATS`
+
+Backend type : Emulator, physical
 
 # About this backend
 `EMU:40Q:PHYSICAL_CATS` reproduces the behavior of a chip featuring 40 cat qubits connected in a grid pattern.

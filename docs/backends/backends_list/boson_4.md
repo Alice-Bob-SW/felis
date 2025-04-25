@@ -1,7 +1,8 @@
 # QPU:1Q:BOSON_4A (or 4B, or 4C)
 
-| Backend name | `EMU:1Q:BOSON_4A` (or 4B, or 4C) |
-| Backend type | Hardware, physical |
+Backend name : `EMU:1Q:BOSON_4A` (or 4B, or 4C)
+
+Backend type : Hardware, physical
 
 # About this backend
 The `QPU:1Q:BOSON_4x` backends are real quantum chips using a [Boson 4 design](../../reference/boson_4_chips.md), located in Alice & Bob’s offices

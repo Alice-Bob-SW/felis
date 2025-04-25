@@ -1,7 +1,8 @@
 # 40 logical qubits
 
-| Backend name | `EMU:40Q:LOGICAL_TARGET` |
-| Backend type | Emulator, logical |
+Backend name : `EMU:40Q:LOGICAL_TARGET`
+
+Backend type : Emulator, logical
 
 # About this backend
 `EMU:40Q:LOGICAL_TARGET` reproduces what might be the behavior of a mature logical chip, featuring 40 logical qubits. It is built using optimistic (but not unrealistic) hypotheses on qubit quality, taken from [this paper](https://arxiv.org/abs/2302.06639) and a distance 15 repetition code.
