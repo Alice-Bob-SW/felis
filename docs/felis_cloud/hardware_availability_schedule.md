@@ -10,7 +10,7 @@ Boson 4 is **offline for maintenance** from April 25th to May 11th (included).
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Monday, May 12th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Monday, May 12th | 10am - 5pm CET | - |
 | Tuesday, May 13th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Wednesday, May 14th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Thursday, May 15th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
