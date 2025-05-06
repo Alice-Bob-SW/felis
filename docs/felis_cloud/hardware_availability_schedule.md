@@ -6,7 +6,7 @@ All emulators in the remote provider are expected to be available 24/7.
 
 ## Quantum hardware
 
-Boson 4 is **offline for maintenance** from April 25th to May 11th (included).
+Boson 4 is **offline for maintenance** from April 25th to May 12th (included).
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
