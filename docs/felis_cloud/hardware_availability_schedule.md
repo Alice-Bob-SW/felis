@@ -8,14 +8,7 @@ All emulators in the remote provider are expected to be available 24/7.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
-| Monday, May 12th | - | - |
-| Tuesday, May 13th | - | - |
-| Wednesday, May 14th | - | - |
-| Thursday, May 15th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, May 16th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Saturday, May 17th | - | - |
-| Sunday, May 18th | - | - |
-| Monday, May 19th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Monday, May 19th | - | - |
 | Tuesday, May 20th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Wednesday, May 21st | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Thursday, May 22nd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
@@ -29,7 +22,13 @@ All emulators in the remote provider are expected to be available 24/7.
 | Friday, June 30th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Saturday, June 31th | - | - |
 | Sunday, June 1st | - | - |
-
+| Monday, June 2nd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Tuesday, June 3rd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Wednesday, June 4th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Thursday, June 5th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Friday, June 6th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Saturday, June 7th | - | - |
+| Sunday, June 8th | - | - |
 
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status).
