@@ -9,7 +9,7 @@ All emulators in the remote provider are expected to be available 24/7.
 | Date | Availability window | Chip |
 | --- | --- | --- |
 | Monday, May 19th | - | - |
-| Tuesday, May 20th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Tuesday, May 20th | - | - |
 | Wednesday, May 21st | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Thursday, May 22nd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Friday, May 23rd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
