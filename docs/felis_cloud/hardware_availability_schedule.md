@@ -10,13 +10,13 @@ All emulators in the remote provider are expected to be available 24/7.
 | --- | --- | --- |
 | Monday, May 19th | - | - |
 | Tuesday, May 20th | - | - |
-| Wednesday, May 21st | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Thursday, May 22nd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, May 23rd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Wednesday, May 21st | - | - |
+| Thursday, May 22nd | - | - |
+| Friday, May 23rd | - | - |
 | Saturday, May 24th | - | - |
 | Sunday, May 25th | - | - |
-| Monday, May 26th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Tuesday, May 27th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Monday, May 26th | - | - |
+| Tuesday, May 27th | - | - |
 | Wednesday, May 28th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Thursday, May 29th | - | - |
 | Friday, June 30th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
