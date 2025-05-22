@@ -15,12 +15,16 @@ Logical error rates are between $10^{-3}$ and $10^{-4}$, but they can be made be
 
 # Supported backend parameters
 - `average_nb_photons`
+    - Default value: 7
     - Supported values: 4 and above
 - `distance`
+    - Default value: 13
     - Supported values: 3 and above, odd integers only
 - `kappa_1`
+    - Default value: 100
     - Supported values: 10 and above
 - `kappa_2`
+    - Default value: 100 000
     - Supported values: 100 and above
 
 💡 The `kappa_1 / kappa_2` ratio must be between 1e-7 and 1e-1
