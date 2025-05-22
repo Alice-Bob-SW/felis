@@ -7,7 +7,7 @@ The first paper you'll want to read about cat qubits is the seminal paper by our
 The chip in this paper is now called "Boson 1".
 
 - Nature: [https://www.nature.com/articles/s41567-020-0824-x](https://www.nature.com/articles/s41567-020-0824-x)
-- arXiv (in case you don't have a Nature subscription): [https://arxiv.org/abs/1907.11729](https://arxiv.org/abs/1907.11729)
+- arXiv: [https://arxiv.org/abs/1907.11729](https://arxiv.org/abs/1907.11729)
 
 ## Repetition Cat Qubits for Fault-Tolerant Quantum Computation
 
@@ -30,7 +30,7 @@ The chip in this paper is now called "Boson 2".
 The chip in this paper is now called "Boson 3".
 
 - Nature: [https://www.nature.com/articles/s41586-024-07294-3](https://www.nature.com/articles/s41586-024-07294-3)
-- arXiv (in case you don't have a Nature subscription): [https://arxiv.org/abs/2307.06617](https://arxiv.org/abs/2307.06617)
+- arXiv: [https://arxiv.org/abs/2307.06617](https://arxiv.org/abs/2307.06617)
 
 ## Autoparametric Resonance Extending the Bit-Flip Time of a Cat Qubit up to 0.3 s
 
@@ -42,10 +42,11 @@ In parallel, we also explore better transmon-based designs, such as AutoCat whic
 
 The reason why we invest in cat qubits is that they make it possible to reach the very low error rates required to run quantum computing's landmark algorithms. In this paper by Élie Gouzien et al., we describe the architecture of a fault-tolerant computer which can run Shor's algorithm using 60x fewer qubits than an architecture using transmons and a surface code.
 
+- Physical Review Letters: [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.040602](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.040602)
 - arXiv: [https://arxiv.org/abs/2302.06639](https://arxiv.org/abs/2302.06639)
 
 ## LDPC-cat codes for low-overhead quantum computing in 2D
 
 And finally, our latest theoretical breakthrough is the adaptation of LDPC codes to cat qubits, which further reduces the number of qubits needed to run useful algorithms. In this paper by Diego Ruiz et al., written in collaboration with Inria, we show how to implement 100 logical qubits with only 1,500 physical qubits, or run Shor's algorithm with 200x fewer qubits than transmons with a surface code.
 
-- arXiv: [https://arxiv.org/abs/2401.09541](https://arxiv.org/abs/2401.09541)
+- Nature: [https://www.nature.com/articles/s41467-025-56298-8](https://www.nature.com/articles/s41467-025-56298-8)
