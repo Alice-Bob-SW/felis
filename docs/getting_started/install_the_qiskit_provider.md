@@ -14,7 +14,7 @@ pip install --upgrade qiskit-alice-bob-provider
 
 📝 **Note:** no need to install Qiskit separately, it will be installed automatically if it is not already installed.
 
-⚠️ **Warning:** Felis is currently only compatible with Qiskit 0.44.3. If you have a more recent version of Qiskit, you will need to create a new environment before installing Felis.
+⚠️ **Warning:** Felis is currently only compatible with Qiskit 1.x, starting with 1.3.1. If you have a more recent version of Qiskit (2.0 or higher), you will need to create a new environment before installing Felis.
 
 
 ## 3. Write your first Qiskit program
