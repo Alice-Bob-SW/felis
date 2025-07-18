@@ -16,6 +16,7 @@ Depending on the backend, some settings affecting the backend's noise characteri
 | [EMU:40Q:PHYSICAL_CATS](../backends/backends_list/40_physical_cats.md) | ✅ | ✅ | ✅ | ❌ | Remote & Local |
 | [EMU:15Q:LOGICAL_EARLY](../backends/backends_list/logical_early.md) | ✅ | ✅ | ✅ | ✅ | Remote & Local |
 | [EMU:40Q:LOGICAL_TARGET](../backends/backends_list/logical_target.md) | ✅ | ✅ | ✅ | ✅ | Remote & Local |
+| [EMU:40Q:LOGICAL_NOISELESS](../backends/backends_list/logical_noiseless.md) | ❌ | ❌ | ❌ | ❌ | Remote & Local |
 
 ### Average number of photons
 
