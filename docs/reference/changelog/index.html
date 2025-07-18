@@ -1,0 +1,1790 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://felis.alice-bob.com/docs/reference/changelog/">
+      
+      
+        <link rel="prev" href="../the_api/">
+      
+      
+        <link rel="next" href="../about_the_provider/">
+      
+      
+      <link rel="icon" href="../../media/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Felis changelog - Felis Documentation</title>
+      
+    
+    
+
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Felis Documentation" class="md-header__button md-logo" aria-label="Felis Documentation" data-md-component="logo">
+      
+  <img src="../../media/logo-ab.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Felis Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Felis changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting_started/install_the_qiskit_provider/" class="md-tabs__link">
+          
+  
+  
+  Getting started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../felis_cloud/about_felis_cloud/" class="md-tabs__link">
+          
+  
+  
+  Felis Cloud
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../backends/about_backends/" class="md-tabs__link">
+          
+  
+  
+  Backends
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../faq/" class="md-tabs__link">
+          
+  
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contact_us/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contact us
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Felis Documentation" class="md-nav__button md-logo" aria-label="Felis Documentation" data-md-component="logo">
+      
+  <img src="../../media/logo-ab.png" alt="logo">
+
+    </a>
+    Felis Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/install_the_qiskit_provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install the Qiskit provider
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/physical_example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    An example with physical qubits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/logical_example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    An example with logical qubits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/working_with_cat_qubits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Working with cat qubits: similarities & differences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/why_cat_qubits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Why work with cat qubits?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/sample_notebooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sample notebook library
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Felis Cloud
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Felis Cloud
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../felis_cloud/about_felis_cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About Felis Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../felis_cloud/connect_to_felis_cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connect to Felis Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../felis_cloud/hardware_availability_schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hardware availability schedule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../felis_cloud/run_multiple_circuits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to run multiple circuits remotely
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Backends
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Backends
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backends/about_backends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About backends
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backends/logical_physical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logical and physical backends
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backends/set_parameters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Set backends parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    List of available backends
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            List of available backends
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backends/backends_list/boson_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QPU:1Q:BOSON_4A (or 4B, or 4C)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backends/backends_list/lescanne_2020/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:1Q:LESCANNE_2020
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backends/backends_list/6_physical_cats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:6Q:PHYSICAL_CATS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backends/backends_list/40_physical_cats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:40Q:PHYSICAL_CATS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backends/backends_list/logical_early/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:15Q:LOGICAL_EARLY
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backends/backends_list/logical_target/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:40Q:LOGICAL_TARGET
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backends/backends_list/logical_noiseless/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:40Q:LOGICAL_NOISELESS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Frequently asked questions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supported_instructions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supported instructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../papers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Useful scientific papers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../error_models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error models in emulators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boson_4_chips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Boson 4 chips
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Felis API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Felis changelog
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Felis changelog
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-111" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 1.1.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-110" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 1.1.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 1.0.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-072" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.7.2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-071" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.7.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-070" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.7.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-060" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.6.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-054" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.5.4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-053" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.5.3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-052" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.5.2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-051" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.5.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-050" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.5.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-042" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.4.2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-041" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.4.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-040" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.4.0
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about_the_provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About the Qiskit provider
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact us
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-111" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 1.1.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-110" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 1.1.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 1.0.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-072" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.7.2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-071" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.7.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-070" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.7.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-060" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.6.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-054" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.5.4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-053" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.5.3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-052" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.5.2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-051" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.5.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-050" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.5.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-042" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.4.2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-041" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.4.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-040" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.4.0
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="changelog">Changelog</h1>
+<h2 id="version-111">Version 1.1.1</h2>
+<p><code>get_memory</code> functionality for Remote Providers:</p>
+<ul>
+<li>When using the <code>memory=True</code> parameter in <code>backend.run</code>, the result of each individual shot is stored. It can then be retrieved using the <code>get_memory</code> function on the result of an <code>AliceBobRemoteProvider</code> job.</li>
+<li>This feature aligns with functionality already available in the <code>AliceBobLocalProvider</code>, ensuring consistency across providers.</li>
+<li>This makes it possible to use a Boson 4 chip as a random number generator, for example.</li>
+</ul>
+<p><strong>Example</strong></p>
+<p>Here’s how to retrieve the memory of a quantum circuit execution:</p>
+<pre><code class="language-python">from qiskit_alice_bob_provider import AliceBobRemoteProvider
+from qiskit import transpile
+
+# Initialize the remote provider
+remote_provider = AliceBobRemoteProvider('&lt;API_KEY&gt;')
+
+# Retrieve the backend and execute the circuit
+backend = remote_provider.get_backend('&lt;backend&gt;')
+circuit = &lt;...&gt;  # Define your quantum circuit
+transpiled_circuit = transpile(circuit, backend)
+job = backend.run(transpiled_circuit, shots=10000, memory=True)
+
+# Retrieve the memory of the circuit
+result = job.result()
+memory = result.get_memory()
+
+print(memory)
+</code></pre>
+<h2 id="version-110">Version 1.1.0</h2>
+<ul>
+<li>Migrated to Qiskit 1.3 :<ul>
+<li>Default <code>optimization_level</code> for <code>backend.transpile()</code> is changed from 1 to 2.</li>
+</ul>
+</li>
+<li>Transpilation now works correctly for backend targets with only Clifford + T gate basis (except for gates CRY, RCCX and RCCCX on macOS for now)</li>
+<li>Alice &amp; Bob custom options like <code>average_nb_photons</code> are not allowed for <code>backend.run()</code> with local provider because they will be ignored. They should be passed to <code>provider.get_backend()</code> instead.</li>
+<li>Drop support for Python 3.8</li>
+</ul>
+<h2 id="version-100">Version 1.0.0</h2>
+<ul>
+<li>Migrated to Qiskit 1.2 (BREAKING CHANGES for 1.0) :<ul>
+<li>Function <code>execute()</code> is removed in favor of <code>transpile()</code> + <code>backend.run()</code></li>
+<li><code>circuit.cnot()</code> gate should now be declared with <code>circuit.cx()</code></li>
+<li>Python environments created with previous Qiskit versions need to be recreated</li>
+<li>For more details about other Qiskit 1.0 changes, you can read the <a href="https://docs.quantum.ibm.com/migration-guides/qiskit-1.0-features">complete migration guide</a>.</li>
+</ul>
+</li>
+<li>Specifying options for <code>get_backend()</code> no longer modifies the default 
+  options for this backend on the Alice &amp; Bob provider Python object.</li>
+</ul>
+<p>Example to execute a circuit :</p>
+<pre><code class="language-python"># Legacy path
+from qiskit import execute
+
+job = execute(circuit, backend)
+
+# New path
+from qiskit import transpile
+
+new_circuit = transpile(circuit, backend)
+job = backend.run(new_circuit)
+</code></pre>
+<h2 id="version-072">Version 0.7.2</h2>
+<ul>
+<li>Bump twine to version 5.1.1</li>
+</ul>
+<h2 id="version-071">Version 0.7.1</h2>
+<ul>
+<li>Use ipywidget to display job status on notebooks</li>
+</ul>
+<h2 id="version-070">Version 0.7.0</h2>
+<ul>
+<li>Deprecated Python 3.7 for the provider. Python 3.7 has been officially deprecated since June 27th 2023. (<a href="https://devguide.python.org/versions">https://devguide.python.org/versions/</a>) This was triggered after ARM chip users experienced issues with installing the provider since Numpy is not built for ARM Python 3.7.</li>
+<li>Set max version of Python to 3.11 for the provider. Python 3.12+ introduces breaking changes to setuptools. The Alice &amp; Bob team will support this version in the near future.</li>
+<li>Changed default remote API URL to <code>api-gcp.alice-bob.com</code> instead of <code>api.alice-bob.com</code>, following the official release of Felis Cloud on Google Cloud Platform. GCP is now the main point of entry to use Felis Cloud.</li>
+<li>Added a warning when instancing the <code>AliceBobRemoteProvider</code> if a new version of the provider is available on pypi.</li>
+</ul>
+<h2 id="version-060">Version 0.6.0</h2>
+<ul>
+<li>Improved feedback while running circuits using the remote provider</li>
+</ul>
+<h2 id="version-054">Version 0.5.4</h2>
+<ul>
+<li>Add support for the TDG gate for the logical backends of the remote provider (the TDG gate was already supported on the local provider)</li>
+</ul>
+<h2 id="version-053">Version 0.5.3</h2>
+<ul>
+<li>Fix a transpilation issue that prevented the usage of logical backends with the remote provider.</li>
+</ul>
+<h2 id="version-052">Version 0.5.2</h2>
+<ul>
+<li>Fix a transpilation issue for the logical backends, preventing the transpilation of circuits using a cswap gate.</li>
+</ul>
+<h2 id="version-051">Version 0.5.1</h2>
+<ul>
+<li>Improved transpilation and scheduling for the local backends, to better support programs imported from QASM code.</li>
+</ul>
+<h2 id="version-050">Version 0.5.0</h2>
+<ul>
+<li>Harmonized the <code>get_backend</code> functions of the remote and local provider to act in a similar manner. The following line is now working as it does for local:</li>
+</ul>
+<pre><code class="language-python">remote_provider.get_backend('EMU:6Q:PHYSICAL_CATS', average_nb_photons=4.5, kappa_1=1000)
+</code></pre>
+<h2 id="version-042">Version 0.4.2</h2>
+<ul>
+<li>Released multi-qubits logical and physical targets for the remote provider, allowing to run these models remotely.</li>
+</ul>
+<h2 id="version-041">Version 0.4.1</h2>
+<ul>
+<li>Added support for Python 3.11</li>
+</ul>
+<h2 id="version-040">Version 0.4.0</h2>
+<ul>
+<li>Added logical backends: <code>EMU:15Q:LOGICAL_EARLY</code> and <code>EMU:40Q:LOGICAL_TARGET</code></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1748 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://felis.alice-bob.com/docs/backends/set_parameters/">
+      
+      
+        <link rel="prev" href="../logical_physical/">
+      
+      
+        <link rel="next" href="../backends_list/boson_4/">
+      
+      
+      <link rel="icon" href="../../media/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Set backends parameters - Felis Documentation</title>
+      
+    
+    
+
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#set-backend-parameters" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Felis Documentation" class="md-header__button md-logo" aria-label="Felis Documentation" data-md-component="logo">
+      
+  <img src="../../media/logo-ab.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Felis Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Set backends parameters
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting_started/install_the_qiskit_provider/" class="md-tabs__link">
+          
+  
+  
+  Getting started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../felis_cloud/about_felis_cloud/" class="md-tabs__link">
+          
+  
+  
+  Felis Cloud
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../about_backends/" class="md-tabs__link">
+          
+  
+  
+  Backends
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/faq/" class="md-tabs__link">
+          
+  
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contact_us/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contact us
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Felis Documentation" class="md-nav__button md-logo" aria-label="Felis Documentation" data-md-component="logo">
+      
+  <img src="../../media/logo-ab.png" alt="logo">
+
+    </a>
+    Felis Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/install_the_qiskit_provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install the Qiskit provider
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/physical_example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    An example with physical qubits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/logical_example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    An example with logical qubits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/working_with_cat_qubits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Working with cat qubits: similarities & differences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/why_cat_qubits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Why work with cat qubits?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/sample_notebooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sample notebook library
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Felis Cloud
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Felis Cloud
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../felis_cloud/about_felis_cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About Felis Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../felis_cloud/connect_to_felis_cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connect to Felis Cloud
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../felis_cloud/hardware_availability_schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hardware availability schedule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../felis_cloud/run_multiple_circuits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to run multiple circuits remotely
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Backends
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Backends
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about_backends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About backends
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logical_physical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logical and physical backends
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Set backends parameters
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Set backends parameters
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#available-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Available parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#average-number-of-photons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Average number of photons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kappa_1-and-kappa_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\kappa_1\) and \(\kappa_2\)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(\kappa_1\) and \(\kappa_2\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kappa_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\kappa_1\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kappa_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\kappa_2\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kappa_1kappa_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\kappa_1/\kappa_2\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repetition-code-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repetition code distance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set parameters
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    List of available backends
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            List of available backends
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backends_list/boson_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QPU:1Q:BOSON_4A (or 4B, or 4C)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backends_list/lescanne_2020/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:1Q:LESCANNE_2020
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backends_list/6_physical_cats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:6Q:PHYSICAL_CATS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backends_list/40_physical_cats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:40Q:PHYSICAL_CATS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backends_list/logical_early/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:15Q:LOGICAL_EARLY
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backends_list/logical_target/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:40Q:LOGICAL_TARGET
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backends_list/logical_noiseless/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMU:40Q:LOGICAL_NOISELESS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Frequently asked questions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/supported_instructions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supported instructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/papers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Useful scientific papers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/error_models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error models in emulators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/boson_4_chips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Boson 4 chips
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/the_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Felis API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Felis changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/about_the_provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About the Qiskit provider
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact us
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#available-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available parameters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Available parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#average-number-of-photons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Average number of photons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kappa_1-and-kappa_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\kappa_1\) and \(\kappa_2\)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(\kappa_1\) and \(\kappa_2\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kappa_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\kappa_1\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kappa_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\kappa_2\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kappa_1kappa_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\kappa_1/\kappa_2\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repetition-code-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repetition code distance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set parameters
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="set-backend-parameters">Set backend parameters</h1>
+<p>Depending on the backend, some settings affecting the backend's noise characteristics can be configured.</p>
+<h2 id="available-parameters">Available parameters</h2>
+<h3 id="summary">Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>average_nb_photons</th>
+<th>kappa_1</th>
+<th>kappa_2</th>
+<th>distance</th>
+<th>Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../backends_list/boson_4/">QPU:1Q:BOSON_4A</a></td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>Remote only</td>
+</tr>
+<tr>
+<td><a href="../backends_list/boson_4/">QPU:1Q:BOSON_4B</a></td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>Remote only</td>
+</tr>
+<tr>
+<td><a href="../backends_list/boson_4/">QPU:1Q:BOSON_4C</a></td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>Remote only</td>
+</tr>
+<tr>
+<td><a href="../backends_list/lescanne_2020/">EMU:1Q:LESCANNE_2020</a></td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>Remote &amp; Local</td>
+</tr>
+<tr>
+<td><a href="../backends_list/6_physical_cats/">EMU:6Q:PHYSICAL_CATS</a></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td>Remote &amp; Local</td>
+</tr>
+<tr>
+<td><a href="../backends_list/40_physical_cats/">EMU:40Q:PHYSICAL_CATS</a></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td>Remote &amp; Local</td>
+</tr>
+<tr>
+<td><a href="../backends_list/logical_early/">EMU:15Q:LOGICAL_EARLY</a></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Remote &amp; Local</td>
+</tr>
+<tr>
+<td><a href="../backends_list/logical_target/">EMU:40Q:LOGICAL_TARGET</a></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Remote &amp; Local</td>
+</tr>
+<tr>
+<td><a href="../backends_list/logical_noiseless/">EMU:40Q:LOGICAL_NOISELESS</a></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>Remote &amp; Local</td>
+</tr>
+</tbody>
+</table>
+<h3 id="average-number-of-photons">Average number of photons</h3>
+<ul>
+<li><code>average_nb_photons</code> is the number photons trapped in the qubit’s cavity.</li>
+<li>Increasing it will exponentially decrease the number of bit-flips, at the cost of a linear increase of the number of phase-flips.</li>
+<li>This parameter is available in all backends.</li>
+</ul>
+<h3 id="kappa_1-and-kappa_2"><span class="arithmatex">\(\kappa_1\)</span> and <span class="arithmatex">\(\kappa_2\)</span></h3>
+<h4 id="kappa_1"><span class="arithmatex">\(\kappa_1\)</span></h4>
+<ul>
+<li><code>kappa_1</code> is the one-photon loss rate, expressed in Hz.</li>
+<li>Qubit quality decreases as <code>kappa_1</code> increases, since one-photon losses causes phase-flips.</li>
+<li><a href="../../reference/boson_4_chips/">Boson 4 chips</a> feature <code>kappa_1 = 3.14*19_900</code>.</li>
+<li>This parameter is not available on a real chip and on digital twin emulators.</li>
+</ul>
+<h4 id="kappa_2"><span class="arithmatex">\(\kappa_2\)</span></h4>
+<ul>
+<li><code>kappa_2</code> is the two photon-loss rate, expressed in Hz.</li>
+<li>Qubit quality increases as <code>kappa_2</code> increases, since the exchange of pairs of photons is used to stabilize the qubit.</li>
+<li><a href="../../reference/boson_4_chips/">Boson 4 chips</a> feature <code>kappa_2 = 3.14*250_000</code>.</li>
+<li>This parameter is not available on a real chip and on digital twin emulators.</li>
+</ul>
+<h4 id="kappa_1kappa_2"><span class="arithmatex">\(\kappa_1/\kappa_2\)</span></h4>
+<ul>
+<li>The <span class="arithmatex">\(\kappa_1/\kappa_2\)</span> ratio is a good proxy for the quality of the physical chip.</li>
+<li>The lower this ratio, the higher the quality of the chip.</li>
+<li>Current Alice &amp; Bob chips feature <span class="arithmatex">\(\kappa_1/\kappa_2 &lt; 10^{-2}\)</span></li>
+<li>Getting error correction to work reliably requires <span class="arithmatex">\(\kappa_1/\kappa_2 &lt; 10^{-3}\)</span></li>
+<li>Creating 100 logical qubits at a <span class="arithmatex">\(10^{-8}\)</span> error rate with 1500 qubits requires <span class="arithmatex">\(\kappa_1/\kappa_2 &lt; 10^{-4}\)</span>, as shown in <a href="https://arxiv.org/abs/2401.09541">this article</a></li>
+<li>Running Shor's algorithm on a 2048-bit number requires <span class="arithmatex">\(\kappa_1/\kappa_2 &lt; 10^{-5}\)</span>, as shown in <a href="https://arxiv.org/abs/2302.06639">this article</a></li>
+</ul>
+<h3 id="repetition-code-distance">Repetition code distance</h3>
+<ul>
+<li><code>distance</code> is the distance of the error correction code, i.e. the number of physical qubits used to create a logical qubits.</li>
+<li>Phase-flips are exponentially removed as the distance of the code is increased, but bit-flips increase linearly.</li>
+<li>This parameter is only available for logical backends.</li>
+</ul>
+<h2 id="set-parameters">Set parameters</h2>
+<p>Parameters may be set while initializing a backend:</p>
+<pre><code class="language-python">from qiskit_alice_bob_provider import AliceBobLocalProvider
+from qiskit import QuantumCircuit
+
+provider = AliceBobLocalProvider()
+
+backend = local.get_backend('EMU:1Q:LESCANNE_2020', average_nb_photons=3)
+backend = local.get_backend('EMU:6Q:PHYSICAL_CATS', average_nb_photons=5)
+backend = local.get_backend('EMU:40Q:PHYSICAL_CATS', kappa_2=500_000)
+backend = local.get_backend('EMU:15Q:LOGICAL_EARLY', distance=13)
+
+circuit = QuantumCircuit(...)
+# ...
+
+backend.run(circuit, shots=3000)
+</code></pre>
+<p>Or when executing a circuit:</p>
+<pre><code class="language-python">from qiskit_alice_bob_provider import AliceBobRemoteProvider
+from qiskit import QuantumCircuit
+
+# Replace the placeholder with your actual API key in the line below
+remote = AliceBobRemoteProvider(api_key='YOUR_API_KEY')
+
+backend = remote.get_backend('EMU:1Q:LESCANNE_2020')
+
+circuit = QuantumCircuit(...)
+# ...
+
+backend.run(circuit, shots=3000, average_nb_photons=3)
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
