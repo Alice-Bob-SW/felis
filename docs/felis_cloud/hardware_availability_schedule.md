@@ -6,12 +6,12 @@ All emulators in the remote provider are expected to be available 24/7.
 
 ## Quantum hardware
 
-Boson 4 is currently **offline for maintenance** and will return on **July 22nd**.
+Boson 4 is currently **offline for maintenance** and will return on **July 23rd**.
 
 | Date | Availability window | Chip |
 | --- | --- | --- |
 | Monday, July 21st | - | - |
-| Tuesday, July 22nd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
+| Tuesday, July 22nd | - | - |
 | Wednesday, July 23rd | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Thursday, July 24th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
 | Friday, July 25th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
