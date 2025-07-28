@@ -6,24 +6,7 @@ All emulators in the remote provider are expected to be available 24/7.
 
 ## Quantum hardware
 
-Boson 4 is currently **offline for maintenance** and will return on **July 28th**.
-
-| Date | Availability window | Chip |
-| --- | --- | --- |
-| Monday, July 21st | - | - |
-| Tuesday, July 22nd | - | - |
-| Wednesday, July 23rd | - | - |
-| Thursday, July 24th | - | - |
-| Friday, July 25th | - | - |
-| Saturday, July 26th | - | - |
-| Sunday, July 27th | - | - |
-| Monday, July 28th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Tuesday, July 29th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Wednesday, July 30th | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Thursday, July 31st | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Friday, August 1st | 10am - 5pm CET | `QPU:1Q:BOSON_4A` |
-| Saturday, August 2nd | - | - |
-| Sunday, August 3rd | - | - |
+Boson 4 is **currently offline for a lenghty maintenance operation**. Subscribe to our newsletter at [https://alice-bob.com/](https://alice-bob.com/) to be informed when it is back online.
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status).
 
