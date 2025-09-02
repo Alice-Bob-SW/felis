@@ -6,7 +6,7 @@ All emulators in the remote provider are expected to be available 24/7.
 
 ## Quantum hardware
 
-Boson 4 is **currently offline for a lenghty maintenance operation**. [Subscribe to our newsletter](https://mailchi.mp/alice-bob/newsletter-signups) to be informed when it is back online.
+Boson 4 is **currently offline for a lengthy maintenance operation**. [Subscribe to our newsletter](https://mailchi.mp/alice-bob/newsletter-signups) to be informed when it is back online.
 
 Live status for backends is available at [https://api-gcp.alice-bob.com/console/status](https://api-gcp.alice-bob.com/console/status).
 
