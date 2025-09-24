@@ -23,10 +23,13 @@ Our backends are all named following the pattern `[EMU|QPU]:xxQ:NAME`, where:
 | [EMU:15Q:LOGICAL_EARLY](backends_list/logical_early.md) | ✅ | ✅ |
 | [EMU:40Q:LOGICAL_TARGET](backends_list/logical_target.md) | ✅ | ✅ |
 | [EMU:40Q:LOGICAL_NOISELESS](backends_list/logical_noiseless.md) | ✅ | ✅ |
+| [Custom backends](create_custom_backend.md) | ❌ | ✅ |
 
 Supported instructions depend on each backend.
 
-Click a backends' name to see the instructions it supports, or check the [supported_instructions](../reference/supported_instructions.md) page.
+Click a backend's name to see the instructions it supports, or read the [supported instructions](../reference/supported_instructions.md) page.
+
+You may also create backends with custom noise and time models using the local provider: read the [Create custom backend](create_custom_backend.md) page to learn more.
 
 ## How to check available backends
 
