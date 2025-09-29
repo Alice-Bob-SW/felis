@@ -46,7 +46,7 @@ Read more about supported gates [here](../../reference/supported_instructions.md
 
 # Connectivity
 
-![6-physical-qubits coupling map](../../media/going_further/backends/6_physical_qubits_map.png)
+![6-physical-qubits coupling map](../../media/going_further/backends/40_physical_qubits_map.png)
 
 # Expected performance
 This backend features an error model based on theoretical papers. It is not meant to accurately reproduce a specific current or future Alice & Bob chip.
